@@ -25,133 +25,133 @@ let g:colors_name="marlin"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=none    ctermbg=none    cterm=none
-hi Cursor          ctermfg=none    ctermbg=none    cterm=none
-hi CursorLine      ctermfg=none    ctermbg=none    cterm=none
-hi LineNr          ctermfg=none    ctermbg=none    cterm=none
-hi CursorLineNR    ctermfg=none    ctermbg=none    cterm=none
+hi Normal       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Cursor       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi CursorLine   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi LineNr       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi CursorLineNR ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " -----------------
 " - Number column -
 " -----------------
-hi CursorColumn    ctermfg=none    ctermbg=none    cterm=none
-hi FoldColumn      ctermfg=none    ctermbg=none    cterm=none
-hi SignColumn      ctermfg=none    ctermbg=none    cterm=none
-hi Folded          ctermfg=none    ctermbg=none    cterm=none
+hi CursorColumn ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi FoldColumn   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SignColumn   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Folded       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " -------------------------
 " - Window/Tab delimiters -
 " -------------------------
-hi VertSplit       ctermfg=none    ctermbg=none    cterm=none
-hi ColorColumn     ctermfg=none    ctermbg=none    cterm=none
-hi TabLine         ctermfg=none    ctermbg=none    cterm=none
-hi TabLineFill     ctermfg=none    ctermbg=none    cterm=none
-hi TabLineSel      ctermfg=none    ctermbg=none    cterm=none
+hi VertSplit   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi ColorColumn ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi TabLine     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi TabLineFill ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi TabLineSel  ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-hi Directory       ctermfg=none    ctermbg=none    cterm=none
-hi Search          ctermfg=none    ctermbg=none    cterm=none
-hi IncSearch       ctermfg=none    ctermbg=none    cterm=none
+hi Directory ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Search    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " -----------------
 " - Prompt/Status -
 " -----------------
-hi StatusLine      ctermfg=none    ctermbg=none    cterm=none
-hi StatusLineNC    ctermfg=none    ctermbg=none    cterm=none
-hi WildMenu        ctermfg=none    ctermbg=none    cterm=none
-hi Question        ctermfg=none    ctermbg=none    cterm=none
-hi Title           ctermfg=none    ctermbg=none    cterm=none
-hi ModeMsg         ctermfg=none    ctermbg=none    cterm=none
-hi MoreMsg         ctermfg=none    ctermbg=none    cterm=none
+hi StatusLine   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi StatusLineNC ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi WildMenu     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Question     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Title        ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi ModeMsg      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi MoreMsg      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------
 " - Visual aid -
 " --------------
-hi MatchParen      ctermfg=none    ctermbg=none    cterm=none
-hi Visual          ctermfg=none    ctermbg=none    cterm=none
-hi VisualNOS       ctermfg=none    ctermbg=none    cterm=none
-hi NonText         ctermfg=none    ctermbg=none    cterm=none
+hi MatchParen ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Visual     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi VisualNOS  ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi NonText    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
-hi Todo            ctermfg=none    ctermbg=none    cterm=none
-hi Underlined      ctermfg=none    ctermbg=none    cterm=none
-hi Error           ctermfg=none    ctermbg=none    cterm=none
-hi ErrorMsg        ctermfg=none    ctermbg=none    cterm=none
-hi WarningMsg      ctermfg=none    ctermbg=none    cterm=none
-hi Ignore          ctermfg=none    ctermbg=none    cterm=none
-hi SpecialKey      ctermfg=none    ctermbg=none    cterm=none
+hi Todo       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Underlined ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Error      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi ErrorMsg   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi WarningMsg ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Ignore     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpecialKey ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------------------------
 " Variable types
 " --------------------------------
-hi Constant        ctermfg=none    ctermbg=none    cterm=none
-hi String          ctermfg=none    ctermbg=none    cterm=none
-hi StringDelimiter ctermfg=none    ctermbg=none    cterm=none
-hi Character       ctermfg=none    ctermbg=none    cterm=none
-hi Number          ctermfg=none    ctermbg=none    cterm=none
-hi Boolean         ctermfg=none    ctermbg=none    cterm=none
-hi Float           ctermfg=none    ctermbg=none    cterm=none
+hi Constant        ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi String          ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi StringDelimiter ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Character       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Number          ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Boolean         ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Float           ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
-hi Identifier      ctermfg=none    ctermbg=none    cterm=none
-hi Function        ctermfg=none    ctermbg=none    cterm=none
+hi Identifier      ctermfg=none    ctermbg=none    cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Function        ctermfg=none    ctermbg=none    cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------------------------
 " Language constructs
 " --------------------------------
-hi Statement       ctermfg=none    ctermbg=none    cterm=none
-hi Conditional     ctermfg=none    ctermbg=none    cterm=none
-hi Repeat          ctermfg=none    ctermbg=none    cterm=none
-hi Label           ctermfg=none    ctermbg=none    cterm=none
-hi Operator        ctermfg=none    ctermbg=none    cterm=none
-hi Keyword         ctermfg=none    ctermbg=none    cterm=none
-hi Exception       ctermfg=none    ctermbg=none    cterm=none
-hi Comment         ctermfg=none    ctermbg=none    cterm=none
+hi Statement   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Conditional ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Repeat      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Label       ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Operator    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Keyword     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Exception   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Comment     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
-hi Special         ctermfg=none    ctermbg=none    cterm=none
-hi SpecialChar     ctermfg=none    ctermbg=none    cterm=none
-hi Tag             ctermfg=none    ctermbg=none    cterm=none
-hi Delimiter       ctermfg=none    ctermbg=none    cterm=none
-hi SpecialComment  ctermfg=none    ctermbg=none    cterm=none
-hi Debug           ctermfg=none    ctermbg=none    cterm=none
+hi Special        ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpecialChar    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Tag            ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Delimiter      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpecialComment ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Debug          ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " ----------
 " - C like -
 " ----------
-hi PreProc         ctermfg=none    ctermbg=none    cterm=none
-hi Include         ctermfg=none    ctermbg=none    cterm=none
-hi Define          ctermfg=none    ctermbg=none    cterm=none
-hi Macro           ctermfg=none    ctermbg=none    cterm=none
-hi PreCondit       ctermfg=none    ctermbg=none    cterm=none
+hi PreProc   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Include   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Define    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Macro     ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi PreCondit ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
-hi Type            ctermfg=none    ctermbg=none    cterm=none
-hi StorageClass    ctermfg=none    ctermbg=none    cterm=none
-hi Structure       ctermfg=none    ctermbg=none    cterm=none
-hi Typedef         ctermfg=none    ctermbg=none    cterm=none
+hi Type         ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi StorageClass ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Structure    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi Typedef      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------------------------
 " Diff
 " --------------------------------
-hi DiffAdd         ctermfg=none    ctermbg=none    cterm=none
-hi DiffChange      ctermfg=none    ctermbg=none    cterm=none
-hi DiffDelete      ctermfg=none    ctermbg=none    cterm=none
-hi DiffText        ctermfg=none    ctermbg=none    cterm=none
+hi DiffAdd    ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi DiffChange ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi DiffDelete ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi DiffText   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------------------------
 " Completion menu
 " --------------------------------
-hi Pmenu           ctermfg=none    ctermbg=none    cterm=none
-hi PmenuSel        ctermfg=none    ctermbg=none    cterm=none
-hi PmenuSbar       ctermfg=none    ctermbg=none    cterm=none
-hi PmenuThumb      ctermfg=none    ctermbg=none    cterm=none
+hi Pmenu      ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi PmenuSel   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi PmenuSbar  ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi PmenuThumb ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 " --------------------------------
 " Spelling
 " --------------------------------
-hi SpellBad        ctermfg=none    ctermbg=none    cterm=none
-hi SpellCap        ctermfg=none    ctermbg=none    cterm=none
-hi SpellLocal      ctermfg=none    ctermbg=none    cterm=none
-hi SpellRare       ctermfg=none    ctermbg=none    cterm=none
+hi SpellBad   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpellCap   ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpellLocal ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
+hi SpellRare  ctermfg=none ctermbg=none cterm=none guifg=NONE guibg=NONE gui=NONE
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |
