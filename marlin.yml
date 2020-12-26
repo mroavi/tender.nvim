@@ -128,7 +128,7 @@ highlights:
   WildMenu:                     "black blue"
   EndOfBuffer:                  "black"
 
-  # -- Start Treesitter --
+  # -- START Treesitter --
   # Misc
   TSError:                      "error_red"
   TSPunctDelimiter:             "white"
@@ -239,6 +239,12 @@ highlights:
   juliaCommentDelim:            "line_grey"
 
   # -- END Languages --
+
+  # -- START GitGutter --
+  GitGutterAdd:                 "green"
+  GitGutterChange:              "yellow"
+  GitGutterDelete:              "red"
+  # -- END GitGutter --
 
   # -- START Startify --
   StartifyNumber:               "orange"
