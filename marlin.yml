@@ -73,7 +73,7 @@ highlights:
   DiffDelete:                   "black red"
   DiffText:                     "black yellow"
   ErrorMsg:                     "error_red"
-  VertSplit:                    "menu_grey"
+  VertSplit:                    "menu_grey menu_grey"
   Folded:                       "line_grey"
   FoldColumn:                   ""
   IncSearch:                    "yellow line_grey"
