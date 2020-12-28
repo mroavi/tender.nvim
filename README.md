@@ -1,10 +1,14 @@
-Generates a vim color scheme based on the colors specified in the input yaml file.
+##### My Neovim color scheme
 
-To generate the vim color scheme, run:
+The colors are specified in the *marlin.yml* file.
+
+To generate the color scheme, run:
 ```
-./genrate marlin.yml > colors/marlin.vim
+> ./genrate marlin.yml > colors/marlin.vim
 ```
 
-Based on: 
+An airline theme is included as well.
+
+Based on:
 - https://github.com/felipec/vim-felipec
 - https://github.com/ChristianChiarulli/nvcode-color-schemes.vim
