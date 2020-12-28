@@ -168,25 +168,6 @@ highlights:
   # -- END Treesitter --
 
   # -- START Languages --
-  # HTML (keep consistent with Markdown, below)
-  htmlArg:                      "yellow"
-  htmlBold:                     "yellow - b"
-  htmlEndTag:                   "white"
-  htmlH1:                       "blue"
-  htmlH2:                       "blue"
-  htmlH3:                       "blue"
-  htmlH4:                       "blue"
-  htmlH5:                       "blue"
-  htmlH6:                       "blue"
-  htmlItalic:                   "purple - i"
-  htmlLink:                     "cyan - u"
-  htmlSpecialChar:              "yellow"
-  htmlSpecialTagName:           "blue"
-  htlTag:                       "white"
-  htmlTagN:                     "blue"
-  htmlTagName:                  "blue"
-  htmlTitle:                    "white"
-
   # Markdown (keep consistent with HTML, above)
   markdownBlockquote:           "line_grey"
   markdownBold:                 "yellow - b"
@@ -263,20 +244,3 @@ highlights:
   diffLine:      "purple"
   diffFileId:    "blue - br"
   # -- END diff ---
-
-  # ToolbarLine: ". darkgray"
-  # ToolbarButton: "suvagray - r"
-  debugPc:                      "- cyan"
-  debugBreakpoint:              "red - r"
-  # terminal: "bg red green yellow blue magenta cyan silver gray red green yellow blue magenta cyan fg"
-  # -- Other junk you can define --
-  # Debug
-  # Ignore
-  # Tag
-  # Delimiter
-  # SpecialChar
-  # CursorIM", {}) " like Cursor, but used when in IME mode
-  # MoreMsg", {}) " more-prompt
-  # ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
-  # ModeMsg: "yellow - br"
-  # MoreMsg: "green - br"
