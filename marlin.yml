@@ -62,7 +62,7 @@ highlights:
   Cursor:                       "- - r"
 
   ColorColumn:                  "- cursor_grey"
-  CursorLineNr:                 "white - b"
+  CursorLineNr:                 "white"
   SignColumn:                   "- bg"
   Conceal:                      "line_grey"
   CursorColumn:                 "- cursor_grey"
