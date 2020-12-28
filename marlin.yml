@@ -245,13 +245,25 @@ highlights:
   WhichKeyDesc:                 "blue"
   # -- END WhichKey --
 
-  # old stuff
-  diffAdded:                    "green"
-  diffRemoved:                  "red"
-  diffFileId:                   "blue - br"
-  diffFile:                     "special_grey"
-  diffNewFile:                  "green"
-  diffOldFile:                  "red"
+  # -- START git ---
+  gitcommitHeader: "blue"
+  gitcommitType:   "orange"
+  gitcommitFile:   "yellow"
+  # -- END git ---
+
+  # -- START diff ---
+  diffAdded:     "green"
+  diffRemoved:   "red"
+  diffFile:      "cyan"
+  diffIndexLine: "cyan"
+  diffNewFile:   "cyan"
+  diffIndexFile: "white"
+  diffOldFile:   "red"
+  diffSubname:   "white"
+  diffLine:      "purple"
+  diffFileId:    "blue - br"
+  # -- END diff ---
+
   # ToolbarLine: ". darkgray"
   # ToolbarButton: "suvagray - r"
   debugPc:                      "- cyan"
