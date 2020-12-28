@@ -263,15 +263,8 @@ highlights:
   # Tag
   # Delimiter
   # SpecialChar
-  # Cursor", { "fg": s:black, "bg": s:blue }) " the character under the cursor
   # CursorIM", {}) " like Cursor, but used when in IME mode
-  # FoldColumn", {}) " 'foldcolumn'
-  # CursorLineNr", {}) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
   # MoreMsg", {}) " more-prompt
   # ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
-  # ErrorMsg: "red - br"
-  # WarningMsg: "green - br"
   # ModeMsg: "yellow - br"
   # MoreMsg: "green - br"
-  # Question: "cyan - br"
-  # Directory: "blue - b"
