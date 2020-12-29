@@ -107,7 +107,7 @@ highlights:
   WildMenu:         "black blue"
   EndOfBuffer:      "black"
 
-  # -- START Treesitter --
+  # -- Treesitter --
   # Misc
   TSError:              "red_error"
   TSPunctDelimiter:     "white"
@@ -166,10 +166,8 @@ highlights:
   # Tags
   TSTag:                "red"
   TSTagDelimiter:       "grey6"
-  # -- END Treesitter --
 
-  # -- START Languages --
-
+  # -- Languages --
   # Markdown (keep consistent with HTML, above)
   markdownBlockquote:        "grey6"
   markdownBold:              "yellow - b"
@@ -199,19 +197,16 @@ highlights:
   juliaCommentL:     "grey7"
   juliaCommentDelim: "grey7"
 
-  # -- END Languages --
-
-  # -- START GitGutter --
+  # -- GitGutter --
   GitGutterAdd:    "green"
   GitGutterChange: "yellow"
   GitGutterDelete: "red"
-  # -- END GitGutter --
 
-  # -- START Startify --
+  # -- Startify --
   StartifyNumber:  "orange"
   StartifySelect:  "green"
   StartifyBracket: "grey6"
-  StartifySpecial: "cyan"
+  StartifySpecial: "grey6"
   StartifyVar:     "blue"
   StartifyPath:    "grey6"
   StartifyFile:    "white"
@@ -219,22 +214,19 @@ highlights:
   StartifyHeader:  "green"
   StartifySection: "purple"
   StartifyFooter:  "green"
-  # -- END Startify --
 
-  # -- START WhichKey --
+  # -- WhichKey --
   WhichKey:          "purple"
   WhichKeySeperator: "green"
   WhichKeyGroup:     "blue"
   WhichKeyDesc:      "blue"
-  # -- END WhichKey --
 
-  # -- START git ---
+  # -- git ---
   gitcommitHeader: "blue"
   gitcommitType:   "orange"
   gitcommitFile:   "yellow"
-  # -- END git ---
 
-  # -- START diff ---
+  # -- diff ---
   diffAdded:     "green"
   diffRemoved:   "red"
   diffFile:      "cyan"
@@ -245,4 +237,3 @@ highlights:
   diffSubname:   "white"
   diffLine:      "purple"
   diffFileId:    "blue - br"
-  # -- END diff ---
