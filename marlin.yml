@@ -107,6 +107,16 @@ highlights:
   WildMenu:         "black blue"
   EndOfBuffer:      "black"
 
+  # -- LSP --
+  LspDiagnosticsVirtualTextError: "red_error - i"
+  LspDiagnosticsSignError: "red_error - i"
+  LspDiagnosticsVirtualTextWarning: "yellow - i"
+  LspDiagnosticsSignWarning: "yellow - i"
+  LspDiagnosticsVirtualTextInformation: "orange - i"
+  LspDiagnosticsSignInformation: "orange - i"
+  LspDiagnosticsVirtualTextHint: "yellow - i"
+  LspDiagnosticsSignHint: "yellow"
+
   # -- Treesitter --
   # Misc
   TSError:              "red_error"

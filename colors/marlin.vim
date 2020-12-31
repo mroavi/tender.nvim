@@ -84,6 +84,14 @@ hi VisualNOS guifg=#3e4452 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NO
 hi WarningMsg guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#1e1e1e ctermfg=234 guibg=#61afef ctermbg=75 gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#1e1e1e ctermfg=234 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi LspDiagnosticsVirtualTextError guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsSignError guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsVirtualTextWarning guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsSignWarning guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsVirtualTextInformation guifg=#d19a66 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsSignInformation guifg=#d19a66 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsVirtualTextHint guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi LspDiagnosticsSignHint guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSError guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSPunctDelimiter guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSPunctBracket guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
