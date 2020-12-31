@@ -81,6 +81,7 @@ highlights:
   IncSearch:        "yellow grey6"
   LineNr:           "grey5"
   MatchParen:       "blue - u"
+  MoreMsg:          "green - b"
   NonText:          "grey3"
   Pmenu:            "white grey"
   PmenuSel:         "black blue"
