@@ -56,7 +56,7 @@ hi VertSplit guifg=#323232 ctermfg=236 guibg=#323232 ctermbg=236 gui=NONE cterm=
 hi Folded guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi IncSearch guifg=#ffc24b ctermfg=215 guibg=#bbbbbb ctermbg=250 gui=NONE cterm=NONE
-hi LineNr guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi LineNr guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi MoreMsg guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi NonText guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
