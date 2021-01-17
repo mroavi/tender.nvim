@@ -20,7 +20,7 @@ if exists('g:lightline')
   let s:p.normal.error = [ [ s:gray2, s:red ] ]
   let s:p.normal.warning = [ [ s:gray2, s:yellow ] ]
 
-  let s:p.inactive.left = [ [ s:gray5, s:gray2, 'bold' ], [ s:gray5, s:gray2 ] ]
+  let s:p.inactive.left = [ [ s:gray5, s:gray2 ], [ s:gray5, s:gray2 ] ]
   let s:p.inactive.right = [ [ s:bg, s:gray4 ], [ s:gray5, s:gray2 ] ]
 
   let s:p.insert.left = [ [ s:gray2, s:green, 'bold' ], [ s:fg, s:gray2 ] ]
