@@ -40,12 +40,12 @@ hi Error guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=bold,reverse cter
 hi Todo guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=bold,italic cterm=bold,italic
 hi Underlined guifg=#b3deef ctermfg=153 gui=underline cterm=underline
 hi Cursor guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
-hi ColorColumn guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi ColorColumn guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignColumn guifg=NONE ctermfg=NONE guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Conceal guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi CursorColumn guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
-hi CursorLine guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi CursorColumn guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
+hi CursorLine guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi Directory guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi DiffAdd guifg=#202020 ctermfg=234 guibg=#c9d05c ctermbg=185 gui=NONE cterm=NONE
 hi DiffChange guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=underline cterm=underline
@@ -72,16 +72,16 @@ hi SpellBad guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=underline cter
 hi SpellCap guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellLocal guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellRare guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StatusLine guifg=#eeeeee ctermfg=255 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi StatusLine guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi StatusLineNC guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StatusLineTerm guifg=#eeeeee ctermfg=255 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
-hi StatusLineTermNC guifg=#323232 ctermfg=236 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StatusLineTerm guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
+hi StatusLineTermNC guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineFill guifg=NONE ctermfg=NONE guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Terminal guifg=#eeeeee ctermfg=255 guibg=#202020 ctermbg=234 gui=NONE cterm=NONE
-hi Visual guifg=NONE ctermfg=NONE guibg=#666666 ctermbg=241 gui=NONE cterm=NONE
-hi VisualNOS guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Visual guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
+hi VisualNOS guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WarningMsg guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#202020 ctermfg=234 guibg=#73cef4 ctermbg=117 gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#202020 ctermfg=234 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -198,7 +198,7 @@ hi diffOldFile guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi diffSubname guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffLine guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffFileId guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=bold,reverse cterm=bold,reverse
-hi BufTabLineCurrent guifg=#73cef4 ctermfg=117 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi BufTabLineCurrent guifg=#73cef4 ctermfg=117 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi BufTabLineActive guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi BufTabLineHidden guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi BufTabLineFill guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
