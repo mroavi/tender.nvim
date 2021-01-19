@@ -272,3 +272,9 @@ highlights:
   diffSubname:   "white"
   diffLine:      "purple"
   diffFileId:    "blue - br"
+
+  # -- BufTabLine --
+  BufTabLineCurrent:         "blue grey2"
+  BufTabLineActive:          "grey5"
+  BufTabLineHidden:          "grey4"
+  BufTabLineFill:            "background background"

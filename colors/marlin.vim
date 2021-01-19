@@ -198,3 +198,7 @@ hi diffOldFile guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi diffSubname guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffLine guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffFileId guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=bold,reverse cterm=bold,reverse
+hi BufTabLineCurrent guifg=#73cef4 ctermfg=117 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi BufTabLineActive guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi BufTabLineHidden guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi BufTabLineFill guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
