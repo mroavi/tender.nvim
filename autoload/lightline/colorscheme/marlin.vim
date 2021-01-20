@@ -15,7 +15,7 @@ if exists('g:lightline')
 
   let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
 
-  let s:p.normal.left = [ [ s:grey, s:blue, 'bold' ], [ s:blue, s:grey2 ] ]
+  let s:p.normal.left = [ [ s:grey, s:blue, 'bold' ], [ s:fg, s:grey2 ] ]
   let s:p.normal.middle = [ [ s:grey3, s:grey ] ]
   let s:p.normal.right = [ [ s:grey, s:blue ], [ s:grey, s:blue ], [ s:grey, s:blue ] ]
   let s:p.normal.error = [ [ s:grey, s:red ] ]
