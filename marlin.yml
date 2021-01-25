@@ -30,7 +30,8 @@ palette:
 
   # tender
   foreground:   "#eeeeee"
-  background:   "#282828"
+  #background:   "#282828"
+  background:   "#1F1F1F"
   grey:         "#323232"
   red:          "#f43753"
   red_dark:     "#79313c"
