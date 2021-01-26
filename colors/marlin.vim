@@ -7,7 +7,7 @@ if exists('syntax_on')
 endif
 let g:colors_name='marlin'
 
-hi Normal guifg=#eeeeee ctermfg=255 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi Normal guifg=#eeeeee ctermfg=255 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Comment guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=italic cterm=italic
 hi Constant guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi String guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -42,7 +42,7 @@ hi Underlined guifg=#b3deef ctermfg=153 gui=underline cterm=underline
 hi Cursor guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignColumn guifg=NONE ctermfg=NONE guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi SignColumn guifg=NONE ctermfg=NONE guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Conceal guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
@@ -78,7 +78,7 @@ hi StatusLineTerm guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE c
 hi StatusLineTermNC guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi TabLineFill guifg=NONE ctermfg=NONE guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi TabLineFill guifg=NONE ctermfg=NONE guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Terminal guifg=#eeeeee ctermfg=255 guibg=#202020 ctermbg=234 gui=NONE cterm=NONE
 hi Visual guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi VisualNOS guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -201,4 +201,4 @@ hi diffFileId guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=bold,reverse
 hi BufTabLineCurrent guifg=#73cef4 ctermfg=117 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi BufTabLineActive guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi BufTabLineHidden guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi BufTabLineFill guifg=#1f1f1f ctermfg=234 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi BufTabLineFill guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
