@@ -241,13 +241,13 @@ highlights:
   GitGutterDelete: "red"
 
   # -- Startify --
-  StartifyNumber:  "orange"
+  StartifyNumber:  "yellow"
   StartifySelect:  "green"
   StartifyBracket: "grey6"
-  StartifySpecial: "grey6"
+  StartifySpecial: "cyan"
   StartifyVar:     "blue"
-  StartifyPath:    "grey6"
-  StartifyFile:    "white"
+  StartifyPath:    "cyan"
+  StartifyFile:    "yellow"
   StartifySlash:   "grey6"
   StartifyHeader:  "green"
   StartifySection: "purple"

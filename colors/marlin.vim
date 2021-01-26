@@ -170,13 +170,13 @@ hi juliaCommentDelim guifg=#999999 ctermfg=247 guibg=NONE ctermbg=NONE gui=NONE 
 hi GitGutterAdd guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi GitGutterChange guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi GitGutterDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StartifyNumber guifg=#d3b987 ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StartifyNumber guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifySelect guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifyBracket guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StartifySpecial guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StartifySpecial guifg=#b3deef ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifyVar guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StartifyPath guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StartifyFile guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StartifyPath guifg=#b3deef ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StartifyFile guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifySlash guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifyHeader guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StartifySection guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
