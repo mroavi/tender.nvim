@@ -73,7 +73,7 @@ hi SpellCap guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NON
 hi SpellLocal guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellRare guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StatusLine guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
-hi StatusLineNC guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi StatusLineNC guifg=NONE ctermfg=NONE guibg=#292929 ctermbg=235 gui=NONE cterm=NONE
 hi StatusLineTerm guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi StatusLineTermNC guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
