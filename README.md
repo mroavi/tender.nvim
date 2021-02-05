@@ -4,7 +4,7 @@ The colors are specified in the *marlin.yml* file.
 
 To generate the color scheme, run:
 ```
-> ./genrate marlin.yml > colors/marlin.vim
+> ./generate marlin.yml > colors/marlin.vim
 ```
 
 An airline theme is included as well.
