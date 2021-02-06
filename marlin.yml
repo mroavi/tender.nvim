@@ -129,7 +129,7 @@ highlights:
   VertSplit:        "grey grey"
   Folded:           "grey6"
   FoldColumn:       ""
-  IncSearch:        "- - r"
+  IncSearch:        "black white"
   LineNr:           "grey4"
   MatchParen:       "blue - u"
   MoreMsg:          "green - b"
