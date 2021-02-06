@@ -6,6 +6,11 @@ To generate the color scheme, run:
 ```
 > ./generate marlin.yml > colors/marlin.vim
 ```
+from the shell or
+```
+> !./generate marlin.yml > colors/marlin.vim
+```
+from vim.
 
 An airline theme is included as well.
 
