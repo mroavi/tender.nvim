@@ -1,308 +1,316 @@
 information:
   name: marlin
   background: dark
-  author: "Martin Roa Villescas <mroavi@gmail.com>"
+  author: 'Martin Roa Villescas <mroavi@gmail.com>'
 
 palette:
 
   ## onedark
-  #foreground:   "#ABB2BF"
-  #background:   "#1E2127"
-  #grey:         "#282C34"
-  #red:          "#E06C75"
-  #red_dark:     "#BE5046"
-  #green:        "#98C379"
-  #yellow:       "#E5C07B"
-  #orange:       "#D19A66"
-  #blue:         "#61AFEF"
-  #purple:       "#C586C0"
-  #cyan:         "#56B6C2"
-  #white:        "#ABB2BF"
-  #black:        "#1E1E1E"
-  #grey2:        "#2C323C"
-  #grey3:        "#3B4048"
-  #grey4:        "#3E4452"
-  #grey5:        "#4B5263"
-  #grey6:        "#5C6370"
-  #grey_comment: "#7F848E"
-  #red_error:    "#F44747"
-  #white_hint:   "#F8F8FF"
+  #foreground:   '#ABB2BF'
+  #background:   '#1E2127'
+  #grey:         '#282C34'
+  #red1:         '#E06C75'
+  #red3:         '#BE5046'
+  #green1:       '#98C379'
+  #yellow2:      '#E5C07B'
+  #yellow1:      '#D19A66'
+  #blue2:        '#61AFEF'
+  #violet1:      '#C586C0'
+  #blue1:        '#56B6C2'
+  #white:        '#ABB2BF'
+  #black:        '#1E1E1E'
+  #grey2:        '#2C323C'
+  #grey3:        '#3B4048'
+  #grey4:        '#3E4452'
+  #grey5:        '#4B5263'
+  #grey6:        '#5C6370'
+  #grey_comment: '#7F848E'
+  #red_error:    '#F44747'
+  #white_hint:   '#F8F8FF'
 
   # tender
-  foreground:   "#eeeeee"
-  #background:   "#1F1F1F"
-  #background:   "#222222"
-  #background:   "#252525"
-  background:   "#282828"
-  grey:         "#323232"
-  red:          "#f43753"
-  red_dark:     "#79313c"
-  green:        "#c9d05c"
-  yellow:       "#ffc24b"
-  orange:       "#d3b987"
-  blue:         "#73cef4"
-  purple:       "#C590C0"
-  cyan:         "#b3deef"
-  white:        "#eeeeee"
-  black:        "#202020"
-  grey1:        "#303030"
-  grey2:        "#393939"
-  grey3:        "#444444"
-  grey4:        "#666666"
-  grey5:        "#999999"
-  grey6:        "#bbbbbb"
-  grey_comment: "#999999"
-  red_error:    "#f43753"
-  white_hint:   "#ffffff"
+  foreground:   '#eeeeee'
+  #background:   '#1F1F1F'
+  #background:   '#222222'
+  #background:   '#252525'
+  background:   '#282828'
+  grey:         '#323232'
+  red1:         '#f43753'
+  red2:         '#c5152f'
+  red3:         '#79313c'
+  green1:       '#c9d05c'
+  green2:       '#9faa00'
+  green3:       '#6a6b3f'
+  green4:       '#464632'
+  yellow1:      '#d3b987'
+  yellow2:      '#ffc24b'
+  yellow3:      '#715b2f'
+  blue1:        '#b3deef'
+  blue2:        '#73cef4'
+  blue3:        '#44778d'
+  blue4:        '#335261'
+  blue5:        '#293b44'
+  violet1:      '#C590C0'
+  white:        '#eeeeee'
+  black:        '#202020'
+  grey1:        '#303030'
+  grey2:        '#393939'
+  grey3:        '#444444'
+  grey4:        '#666666'
+  grey5:        '#999999'
+  grey6:        '#bbbbbb'
+  grey_comment: '#999999'
+  red_error:    '#f43753'
+  white_hint:   '#ffffff'
 
   ## ayu mirage
-  #foreground:   "#cbccc6"
-  #background:   "#1f2430"
-  #grey:         "#707A8C"
-  #red:          "#f08778"
-  #red_dark:     "#ff3333"
-  #green:        "#bae67e"
-  #yellow:       "#fdcc60"
-  #orange:       "#ffa759"
-  #blue:         "#73d0ff"
-  #purple:       "#d4bfff"
-  #cyan:         "#98e6ca"
-  #white:        "#fafafa"
-  #black:        "#101521"
-  #grey1:        "#141925"
-  #grey2:        "#191e2a"
-  #grey3:        "#232834"
-  #grey4:        "#5c6773"
-  #grey5:        "#999999"
-  #grey6:        "#bbbbbb"
-  #grey_comment: "#999999"
-  #red_error:    "#f43753"
-  #white_hint:   "#ffffff"
+  #foreground:   '#cbccc6'
+  #background:   '#1f2430'
+  #grey:         '#707A8C'
+  #red1:         '#f08778'
+  #red3:         '#ff3333'
+  #green1:       '#bae67e'
+  #yellow2:      '#fdcc60'
+  #yellow1:      '#ffa759'
+  #blue2:        '#73d0ff'
+  #violet1:      '#d4bfff'
+  #blue1:        '#98e6ca'
+  #white:        '#fafafa'
+  #black:        '#101521'
+  #grey1:        '#141925'
+  #grey2:        '#191e2a'
+  #grey3:        '#232834'
+  #grey4:        '#5c6773'
+  #grey5:        '#999999'
+  #grey6:        '#bbbbbb'
+  #grey_comment: '#999999'
+  #red_error:    '#f43753'
+  #white_hint:   '#ffffff'
 
 highlights:
-  Normal:         "foreground background"
-  Comment:        "grey_comment - i"
-  Constant:       "yellow"
-  String:         "green"
-  Character:      "green"
-  Number:         "orange"
-  Boolean:        "blue"
-  Float:          "orange"
-  Identifier:     "blue"
-  Function:       "yellow"
-  Statement:      "purple"
-  Conditional:    "purple"
-  Repeat:         "purple"
-  Label:          "blue"
-  Operator:       "purple"
-  Keyword:        "blue"
-  Exception:      "purple"
-  PreProc:        "yellow"
-  Include:        "purple"
-  Define:         "purple"
-  Title:          "cyan"
-  Macro:          "cyan"
-  PreCondit:      "blue"
-  Type:           "blue"
-  StorageClass:   "blue"
-  Structure:      "yellow"
-  Typedef:        "yellow"
-  Special:        "blue - i"
-  SpecialComment: "grey_comment"
-  Error:          "red_error - br"
-  Todo:           "purple - bi"
-  Underlined:     "cyan . u"
-  Cursor:         "- - r"
+  Normal:         'foreground background'
+  Comment:        'grey_comment - i'
+  Constant:       'yellow2'
+  String:         'green1'
+  Character:      'green1'
+  Number:         'yellow1'
+  Boolean:        'blue2'
+  Float:          'yellow1'
+  Identifier:     'blue2'
+  Function:       'yellow2'
+  Statement:      'violet1'
+  Conditional:    'violet1'
+  Repeat:         'violet1'
+  Label:          'blue2'
+  Operator:       'violet1'
+  Keyword:        'blue2'
+  Exception:      'violet1'
+  PreProc:        'yellow2'
+  Include:        'violet1'
+  Define:         'violet1'
+  Title:          'blue1'
+  Macro:          'blue1'
+  PreCondit:      'blue2'
+  Type:           'blue2'
+  StorageClass:   'blue2'
+  Structure:      'yellow2'
+  Typedef:        'yellow2'
+  Special:        'blue2 - i'
+  SpecialComment: 'grey_comment'
+  Error:          'red_error - br'
+  Todo:           'violet1 - bi'
+  Underlined:     'blue1 . u'
+  Cursor:         '- - r'
 
-  ColorColumn:      "- grey2"
-  CursorLineNr:     "white"
-  SignColumn:       "- background"
-  Conceal:          "grey6"
-  CursorColumn:     "- grey2"
-  CursorLine:       "- grey2"
-  Directory:        "blue"
-  DiffAdd:          "black green"
-  DiffChange:       "yellow - u"
-  DiffDelete:       "black red"
-  DiffText:         "black yellow"
-  ErrorMsg:         "red_error"
-  VertSplit:        "grey grey"
-  Folded:           "grey6"
-  FoldColumn:       ""
-  IncSearch:        "black cyan"
-  LineNr:           "grey4"
-  MatchParen:       "blue - u"
-  MoreMsg:          "green - b"
-  NonText:          "grey3"
-  Pmenu:            "white grey"
-  PmenuSel:         "black blue"
-  PmenuSbar:        "- grey3"
-  PmenuThumb:       "- white"
-  Question:         "purple"
-  QuickFixLine:     "black yellow"
-  Search:           "black yellow"
-  SpecialKey:       "grey3"
-  SpellBad:         "red_error - u"
-  SpellCap:         "yellow"
-  SpellLocal:       "yellow"
-  SpellRare:        "yellow"
-  StatusLine:       "white grey2"
-  StatusLineNC:     "grey4 grey1"
-  StatusLineTerm:   "white grey2"
-  StatusLineTermNC: "grey2"
-  TabLine:          "grey6"
-  TabLineSel:       "white"
-  TabLineFill:      "- background"
-  Terminal:         "white black"
-  Visual:           "- grey2"
-  VisualNOS:        "grey2"
-  WarningMsg:       "yellow"
-  WildMenu:         "black blue"
-  EndOfBuffer:      "black"
+  ColorColumn:      '- grey2'
+  CursorLineNr:     'white'
+  SignColumn:       '- background'
+  Conceal:          'grey6'
+  CursorColumn:     '- grey2'
+  CursorLine:       '- grey2'
+  Directory:        'blue2'
+  DiffAdd:          'black green1'
+  DiffChange:       'yellow2 - u'
+  DiffDelete:       'black red1'
+  DiffText:         'black yellow2'
+  ErrorMsg:         'red_error'
+  VertSplit:        'grey grey'
+  Folded:           'grey6'
+  FoldColumn:       ''
+  IncSearch:        'background blue1'
+  LineNr:           'grey4'
+  MatchParen:       'blue2 - u'
+  MoreMsg:          'green1 - b'
+  NonText:          'grey3'
+  Pmenu:            'white grey'
+  PmenuSel:         'black blue2'
+  PmenuSbar:        '- grey3'
+  PmenuThumb:       '- white'
+  Question:         'violet1'
+  QuickFixLine:     'black yellow2'
+  Search:           'background yellow2'
+  SpecialKey:       'grey3'
+  SpellBad:         'red_error - u'
+  SpellCap:         'yellow2'
+  SpellLocal:       'yellow2'
+  SpellRare:        'yellow2'
+  StatusLine:       'white grey2'
+  StatusLineNC:     'grey4 grey1'
+  StatusLineTerm:   'white grey2'
+  StatusLineTermNC: 'grey2'
+  TabLine:          'grey6'
+  TabLineSel:       'white'
+  TabLineFill:      '- background'
+  Terminal:         'white black'
+  Visual:           '- grey2'
+  VisualNOS:        'grey2'
+  WarningMsg:       'yellow2'
+  WildMenu:         'black blue2'
+  EndOfBuffer:      'black'
 
   ## -- LSP --
-  LspDiagnosticsDefaultHint:        "white_hint - i"
-  LspDiagnosticsSignHint:           "white_hint"
-  LspDiagnosticsDefaultError:       "red_error - i"
-  LspDiagnosticsSignError:          "red_error"
-  LspDiagnosticsDefaultWarning:     "yellow - i"
-  LspDiagnosticsSignWarning:        "yellow"
-  LspDiagnosticsDefaultInformation: "orange - i"
-  LspDiagnosticsSignInformation:    "orange"
+  LspDiagnosticsDefaultHint:        'white_hint - i'
+  LspDiagnosticsSignHint:           'white_hint'
+  LspDiagnosticsDefaultError:       'red_error - i'
+  LspDiagnosticsSignError:          'red_error'
+  LspDiagnosticsDefaultWarning:     'yellow2 - i'
+  LspDiagnosticsSignWarning:        'yellow2'
+  LspDiagnosticsDefaultInformation: 'yellow1 - i'
+  LspDiagnosticsSignInformation:    'yellow1'
 
   # -- Treesitter --
   # Misc
-  TSError:              "red_error"
-  TSPunctDelimiter:     "white"
-  TSPunctBracket:       "white"
-  TSPunctSpecial:       "white"
+  TSError:              'red_error'
+  TSPunctDelimiter:     'white'
+  TSPunctBracket:       'white'
+  TSPunctSpecial:       'white'
   # Constants
-  TSConstant:           "blue"
-  TSConstBuiltin:       "orange"
+  TSConstant:           'blue2'
+  TSConstBuiltin:       'yellow1'
   # Not sure about this guy
-  TSConstMacro:         "cyan"
-  TSStringRegex:        "green"
-  TSString:             "green"
-  TSStringEscape:       "cyan"
-  TSCharacter:          "green"
-  TSNumber:             "orange"
-  TSBoolean:            "orange"
-  TSFloat:              "green"
-  TSAnnotation:         "yellow"
-  TSAttribute:          "cyan"
-  TSNamespace:          "white"
+  TSConstMacro:         'blue1'
+  TSStringRegex:        'green1'
+  TSString:             'green1'
+  TSStringEscape:       'blue1'
+  TSCharacter:          'green1'
+  TSNumber:             'yellow1'
+  TSBoolean:            'yellow1'
+  TSFloat:              'green1'
+  TSAnnotation:         'yellow2'
+  TSAttribute:          'blue1'
+  TSNamespace:          'white'
   # Functions
-  TSFuncBuiltin:        "cyan"
-  TSFunction:           "cyan"
-  TSFuncMacro:          "cyan"
-  TSParameter:          "white"
-  TSParameterReference: "white"
-  TSMethod:             "cyan"
-  TSField:              "white"
-  TSProperty:           "white"
-  TSConstructor:        "cyan"
+  TSFuncBuiltin:        'blue1'
+  TSFunction:           'blue1'
+  TSFuncMacro:          'blue1'
+  TSParameter:          'white'
+  TSParameterReference: 'white'
+  TSMethod:             'blue1'
+  TSField:              'white'
+  TSProperty:           'white'
+  TSConstructor:        'blue1'
   # Keywords
-  TSConditional:        "purple"
-  TSRepeat:             "purple"
-  TSLabel:              "blue"
+  TSConditional:        'violet1'
+  TSRepeat:             'violet1'
+  TSLabel:              'blue2'
   # Does not work for yield and return they should be diff then class and def
-  TSKeyword:            "purple"
-  TSKeywordFunction:    "purple"
-  TSKeywordOperator:    "purple"
-  TSOperator:           "white"
-  TSException:          "purple"
-  TSType:               "blue"
-  TSTypeBuiltin:        "yellow"
-  TSStructure:          "#FF00FF"
-  TSInclude:            "purple"
+  TSKeyword:            'violet1'
+  TSKeywordFunction:    'violet1'
+  TSKeywordOperator:    'violet1'
+  TSOperator:           'white'
+  TSException:          'violet1'
+  TSType:               'blue2'
+  TSTypeBuiltin:        'yellow2'
+  TSStructure:          '#FF00FF'
+  TSInclude:            'violet1'
   # Variable
-  TSVariable:           "white"
-  TSVariableBuiltin:    "yellow"
+  TSVariable:           'white'
+  TSVariableBuiltin:    'yellow2'
   # Text
-  TSText:               "#FFFF00"
-  TSStrong:             "#FFFF00"
-  TSEmphasis:           "#FFFF00"
-  TSUnderline:          "#FFFF00"
-  TSTitle:              "#FFFF00"
-  TSLiteral:            "#FFFF00"
-  TSURI:                "#FFFF00"
+  TSText:               '#FFFF00'
+  TSStrong:             '#FFFF00'
+  TSEmphasis:           '#FFFF00'
+  TSUnderline:          '#FFFF00'
+  TSTitle:              '#FFFF00'
+  TSLiteral:            '#FFFF00'
+  TSURI:                '#FFFF00'
   # Tags
-  TSTag:                "red"
-  TSTagDelimiter:       "grey6"
+  TSTag:                'red1'
+  TSTagDelimiter:       'grey6'
 
   # -- Languages --
   # Markdown (keep consistent with HTML, above)
-  markdownBlockquote:        "grey6"
-  markdownBold:              "yellow - b"
-  markdownCode:              "green"
-  markdownCodeBlock:         "green"
-  markdownCodeDelimiter:     "green"
-  markdownH1:                "blue"
-  markdownH2:                "blue"
-  markdownH3:                "blue"
-  markdownH4:                "blue"
-  markdownH5:                "blue"
-  markdownH6:                "blue"
-  markdownHeadingDelimiter:  "red"
-  markdownHeadingRule:       "grey6"
-  markdownId:                "purple"
-  markdownIdDeclaration:     "blue"
-  markdownIdDelimiter:       "purple"
-  markdownItalic:            "purple - i"
-  markdownLinkDelimiter:     "purple"
-  markdownLinkText:          "blue"
-  markdownListMarker:        "red"
-  markdownOrderedListMarker: "red"
-  markdownRule:              "grey6"
-  markdownUrl:               "cyan - u"
+  markdownBlockquote:        'grey6'
+  markdownBold:              'yellow2 - b'
+  markdownCode:              'green1'
+  markdownCodeBlock:         'green1'
+  markdownCodeDelimiter:     'green1'
+  markdownH1:                'blue2'
+  markdownH2:                'blue2'
+  markdownH3:                'blue2'
+  markdownH4:                'blue2'
+  markdownH5:                'blue2'
+  markdownH6:                'blue2'
+  markdownHeadingDelimiter:  'red1'
+  markdownHeadingRule:       'grey6'
+  markdownId:                'violet1'
+  markdownIdDeclaration:     'blue2'
+  markdownIdDelimiter:       'violet1'
+  markdownItalic:            'violet1 - i'
+  markdownLinkDelimiter:     'violet1'
+  markdownLinkText:          'blue2'
+  markdownListMarker:        'red1'
+  markdownOrderedListMarker: 'red1'
+  markdownRule:              'grey6'
+  markdownUrl:               'blue1 - u'
 
   # Julia
-  juliaCommentL:     "grey_comment"
-  juliaCommentDelim: "grey_comment"
+  juliaCommentL:     'grey_comment'
+  juliaCommentDelim: 'grey_comment'
 
   # -- GitGutter --
-  GitGutterAdd:    "green"
-  GitGutterChange: "yellow"
-  GitGutterDelete: "red"
+  GitGutterAdd:    'green1'
+  GitGutterChange: 'yellow2'
+  GitGutterDelete: 'red1'
 
   # -- Startify --
-  StartifyNumber:  "yellow"
-  StartifySelect:  "green"
-  StartifyBracket: "grey6"
-  StartifySpecial: "cyan"
-  StartifyVar:     "blue"
-  StartifyPath:    "cyan"
-  StartifyFile:    "yellow"
-  StartifySlash:   "grey6"
-  StartifyHeader:  "green"
-  StartifySection: "purple"
-  StartifyFooter:  "green"
+  StartifyNumber:  'yellow2'
+  StartifySelect:  'green1'
+  StartifyBracket: 'grey6'
+  StartifySpecial: 'blue1'
+  StartifyVar:     'blue2'
+  StartifyPath:    'blue1'
+  StartifyFile:    'yellow2'
+  StartifySlash:   'grey6'
+  StartifyHeader:  'green1'
+  StartifySection: 'violet1'
+  StartifyFooter:  'green1'
 
   # -- WhichKey --
-  WhichKey:          "purple"
-  WhichKeySeperator: "green"
-  WhichKeyGroup:     "blue"
-  WhichKeyDesc:      "blue"
+  WhichKey:          'violet1'
+  WhichKeySeperator: 'green1'
+  WhichKeyGroup:     'blue2'
+  WhichKeyDesc:      'blue2'
 
   # -- git ---
-  gitcommitHeader: "blue"
-  gitcommitType:   "orange"
-  gitcommitFile:   "yellow"
+  gitcommitHeader: 'blue2'
+  gitcommitType:   'yellow1'
+  gitcommitFile:   'yellow2'
 
   # -- diff ---
-  diffAdded:     "green"
-  diffRemoved:   "red"
-  diffFile:      "cyan"
-  diffIndexLine: "cyan"
-  diffNewFile:   "cyan"
-  diffIndexFile: "white"
-  diffOldFile:   "red"
-  diffSubname:   "white"
-  diffLine:      "purple"
-  diffFileId:    "blue - br"
+  diffAdded:     'green1'
+  diffRemoved:   'red1'
+  diffFile:      'blue1'
+  diffIndexLine: 'blue1'
+  diffNewFile:   'blue1'
+  diffIndexFile: 'white'
+  diffOldFile:   'red1'
+  diffSubname:   'white'
+  diffLine:      'violet1'
+  diffFileId:    'blue2 - br'
 
   # -- BufTabLine --
-  BufTabLineCurrent:         "blue grey2"
-  BufTabLineActive:          "grey5"
-  BufTabLineHidden:          "grey4"
-  BufTabLineFill:            "background background"
+  BufTabLineCurrent:         'blue2 grey2'
+  BufTabLineActive:          'grey5'
+  BufTabLineHidden:          'grey4'
+  BufTabLineFill:            'background background'
