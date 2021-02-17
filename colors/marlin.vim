@@ -55,7 +55,7 @@ hi ErrorMsg guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NON
 hi VertSplit guifg=#323232 ctermfg=236 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
 hi Folded guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi IncSearch guifg=#282828 ctermfg=235 guibg=#b3deef ctermbg=153 gui=NONE cterm=NONE
+hi IncSearch guifg=#282828 ctermfg=235 guibg=#73cef4 ctermbg=117 gui=NONE cterm=NONE
 hi LineNr guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi MoreMsg guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=bold cterm=bold
@@ -66,7 +66,7 @@ hi PmenuSbar guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=238 gui=NONE cterm=NO
 hi PmenuThumb guifg=NONE ctermfg=NONE guibg=#eeeeee ctermbg=255 gui=NONE cterm=NONE
 hi Question guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi QuickFixLine guifg=#202020 ctermfg=234 guibg=#ffc24b ctermbg=215 gui=NONE cterm=NONE
-hi Search guifg=#282828 ctermfg=235 guibg=#ffc24b ctermbg=215 gui=NONE cterm=NONE
+hi Search guifg=#282828 ctermfg=235 guibg=#d3b987 ctermbg=180 gui=NONE cterm=NONE
 hi SpecialKey guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellCap guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
