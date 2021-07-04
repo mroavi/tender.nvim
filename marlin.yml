@@ -314,3 +314,7 @@ highlights:
   BufTabLineActive:          'grey5'
   BufTabLineHidden:          'grey4'
   BufTabLineFill:            'background background'
+  BufTabLineModifiedCurrent: 'yellow2 grey2'
+  BufTabLineModifiedActive:  'yellow2'
+  BufTabLineModifiedHidden:  'yellow2'
+
