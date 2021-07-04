@@ -2,15 +2,14 @@
 
 The colors are specified in the *marlin.yml* file.
 
-To generate the color scheme, run:
+To generate the color scheme from the shell, run:
 ```
 > ./generate marlin.yml > colors/marlin.vim
 ```
-from the shell or
+or from vim:
 ```
 > !./generate marlin.yml > colors/marlin.vim
 ```
-from vim.
 
 An airline theme is included as well.
 
