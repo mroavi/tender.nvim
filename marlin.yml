@@ -267,6 +267,7 @@ highlights:
   # Julia
   juliaCommentL:     'grey_comment'
   juliaCommentDelim: 'grey_comment'
+  juliaFunctionCall: 'blue1'
 
   # -- GitGutter --
   GitGutterAdd:    'green1'
