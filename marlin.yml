@@ -310,8 +310,8 @@ highlights:
   diffFileId:    'blue2 - br'
 
   # -- BufTabLine --
-  BufTabLineCurrent:         'blue2 grey2'
-  BufTabLineActive:          'grey5'
+  BufTabLineCurrent:         'blue2 background'
+  BufTabLineActive:          'grey5 grey1'
   BufTabLineHidden:          'grey4'
   BufTabLineFill:            'background background'
   BufTabLineModifiedCurrent: 'yellow2 grey2'
