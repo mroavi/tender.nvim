@@ -312,8 +312,8 @@ highlights:
 
   # -- BufTabLine --
   BufTabLineCurrent:         'blue2 background'
-  BufTabLineActive:          'grey5 grey1'
-  BufTabLineHidden:          'grey4'
+  BufTabLineActive:          'grey5 background'
+  BufTabLineHidden:          'grey4 background'
   BufTabLineFill:            'background background'
   BufTabLineModifiedCurrent: 'yellow2 grey2'
   BufTabLineModifiedActive:  'yellow2'
