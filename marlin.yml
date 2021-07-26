@@ -142,7 +142,7 @@ highlights:
   MatchParen:       'blue2 - u'
   MoreMsg:          'green1 - b'
   NonText:          'grey3'
-  Pmenu:            'white grey'
+  Pmenu:            'white grey3'
   PmenuSel:         'black blue2'
   PmenuSbar:        '- grey3'
   PmenuThumb:       '- white'

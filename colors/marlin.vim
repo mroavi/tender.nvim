@@ -60,7 +60,7 @@ hi LineNr guifg=#666666 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi MoreMsg guifg=#c9d05c ctermfg=185 guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi NonText guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Pmenu guifg=#eeeeee ctermfg=255 guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
+hi Pmenu guifg=#eeeeee ctermfg=255 guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi PmenuSel guifg=#202020 ctermfg=234 guibg=#73cef4 ctermbg=117 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE ctermfg=NONE guibg=#eeeeee ctermbg=255 gui=NONE cterm=NONE
@@ -78,7 +78,7 @@ hi StatusLineTerm guifg=#eeeeee ctermfg=255 guibg=#393939 ctermbg=237 gui=NONE c
 hi StatusLineTermNC guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#bbbbbb ctermfg=250 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi TabLineFill guifg=NONE ctermfg=NONE guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
+hi TabLineFill guifg=#1f1f1f ctermfg=234 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
 hi Terminal guifg=#eeeeee ctermfg=255 guibg=#202020 ctermbg=234 gui=NONE cterm=NONE
 hi Visual guifg=NONE ctermfg=NONE guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
 hi VisualNOS guifg=#393939 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -200,9 +200,8 @@ hi diffSubname guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi diffLine guifg=#c590c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffFileId guifg=#73cef4 ctermfg=117 guibg=NONE ctermbg=NONE gui=bold,reverse cterm=bold,reverse
 hi BufTabLineCurrent guifg=#73cef4 ctermfg=117 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi BufTabLineActive guifg=#999999 ctermfg=247 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi BufTabLineHidden guifg=#666666 ctermfg=241 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi BufTabLineFill guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi BufTabLineModifiedCurrent guifg=#ffc24b ctermfg=215 guibg=#393939 ctermbg=237 gui=NONE cterm=NONE
-hi BufTabLineModifiedActive guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi BufTabLineModifiedHidden guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi BufTabLineActive guifg=#999999 ctermfg=247 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi BufTabLineHidden guifg=#666666 ctermfg=241 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi BufTabLineModifiedCurrent guifg=#ffc24b ctermfg=215 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
+hi BufTabLineModifiedActive guifg=#ffc24b ctermfg=215 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
+hi BufTabLineModifiedHidden guifg=#ffc24b ctermfg=215 guibg=#1f1f1f ctermbg=234 gui=NONE cterm=NONE
