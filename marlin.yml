@@ -30,9 +30,9 @@ palette:
 
   # tender
   foreground:   '#eeeeee'
-  #background:   '#1F1F1F'
-  #background:   '#222222'
-  #background:   '#252525'
+  background1:   '#1F1F1F'
+  background2:   '#222222'
+  background3:   '#252525'
   background:   '#282828'
   grey:         '#323232'
   red1:         '#f43753'
@@ -312,10 +312,11 @@ highlights:
 
   # -- BufTabLine --
   BufTabLineCurrent:         'blue2 background'
-  BufTabLineActive:          'grey5 background'
-  BufTabLineHidden:          'grey4 background'
-  BufTabLineFill:            'background background'
-  BufTabLineModifiedCurrent: 'yellow2 grey2'
-  BufTabLineModifiedActive:  'yellow2'
-  BufTabLineModifiedHidden:  'yellow2'
+  BufTabLineActive:          'grey5 background1'
+  BufTabLineHidden:          'grey4 background1'
+  # BufTabLineFill:            'background1 background1'
+  TabLineFill:               'background1 background1'
+  BufTabLineModifiedCurrent: 'yellow2 background'
+  BufTabLineModifiedActive:  'yellow2 background1'
+  BufTabLineModifiedHidden:  'yellow2 background1'
 
