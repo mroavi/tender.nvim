@@ -27,6 +27,7 @@ end
 local function set_groups()
 	local groups = {
 		-- Base
+
 		-- Editor highlight groups
 		Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
 		SignColumn = {fg = c.fg, bg = c.bg0},
@@ -42,38 +43,38 @@ local function set_groups()
 		DiffChange = {fg = c.diff_blue, bg = c.none, style = "reverse"}, --  diff mode: Changed line
 		DiffDelete = {fg = c.diff_red, bg = c.none, style = "reverse"}, -- diff mode: Deleted line
 		DiffText = {fg = c.fg, bg = c.none, style = "reverse"}, -- diff mode: Changed text within a changed line
-		ErrorMsg = {fg = c.red}, -- error messages
+		ErrorMsg = {fg = c.red},
 		Folded = {fg = c.gray, c.none, style = "italic"},
 		FoldColumn = {fg = c.blue},
-		IncSearch = {style = "reverse"},
+		IncSearch = {fg = c.bg0, bg = c.blue},
 		LineNr = {fg = c.disabled},
 		CursorLineNr = {fg = c.cyan},
-		MatchParen = {fg = c.red, style = "underline,bold"},
-		ModeMsg = {fg = c.cyan, style = cfg.bold},
-		MoreMsg = {fg = c.cyan, style = cfg.bold},
+		MatchParen = {fg = c.blue, style = "underline"},
+		ModeMsg = {fg = c.yellow, style = cfg.bold},
+		MoreMsg = {fg = c.green, style = cfg.bold},
 		NonText = {fg = c.bg3},
-		Pmenu = {fg = c.fg, bg = c.bg4},
-		PmenuSel = {fg = c.bg0, bg = c.blue, style = "bold"},
+		Pmenu = {fg = c.fg, bg = c.bg3},
+		PmenuSel = {fg = c.bg0, bg = c.blue},
 		PmenuSbar = {fg = c.fg, bg = c.bg2},
 		PmenuThumb = {fg = c.fg, bg = c.gray},
 		Question = {fg = c.green, style = cfg.bold},
-		QuickFixLine = {fg = c.blue, bg = c.bg1, style = "bold,italic"},
+		QuickFixLine = {bg = c.bg2},
 		qfLineNr = {fg = c.blue, bg = c.bg1},
-		Search = {style = "reverse"},
+		Search = {fg = c.bg0, bg = c.yellow},
 		SpecialKey = {fg = c.bg3},
 		SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
 		SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
-		SpellLocal = {fg = c.cyan, bg = c.none, style = "italic,undercurl"},
-		SpellRare = {fg = c.cyan, bg = c.none, style = "italic,undercurl"},
-		StatusLine = {fg = c.blue, bg = c.bg1},
-		StatusLineNC = {fg = c.gray},
+		SpellLocal = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
+		SpellRare = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
+		StatusLine = {fg = c.blue, bg = c.bg2},
+		StatusLineNC = {fg = c.gray, bg = c.bg2},
 		StatusLineTerm = {fg = c.fg, bg = c.bg3},
 		StatusLineTermNC = {fg = c.fg, bg = c.bg3},
 		TabLineFill = {fg = c.fg},
 		TablineSel = {fg = c.bg0, bg = c.blue},
 		Tabline = {fg = c.gray},
 		Title = {fg = c.cyan, bg = c.none, style = cfg.bold},
-		Visual = {fg = c.none, style = "reverse"},
+		Visual = {bg = c.bg3},
 		VisualNOS = {fg = c.none, style = "reverse"},
 		WarningMsg = {fg = c.orange, style = cfg.bold},
 		WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
@@ -91,17 +92,18 @@ local function set_groups()
 		healthError = {fg = c.red},
 		healthSuccess = {fg = c.green},
 		healthWarning = {fg = c.orange},
+
 		-- Common
-		Type = {fg = c.cyan}, -- int, long, char, etc.
-		StorageClass = {fg = c.cyan}, -- static, register, volatile, etc.
+		Type = {fg = c.light_blue}, -- int, long, char, etc.
+		StorageClass = {fg = c.light_blue}, -- static, register, volatile, etc.
 		Structure = {fg = c.orange}, -- struct, union, enum, etc.
-		Constant = {fg = c.violet}, -- any constant
+		Constant = {fg = c.violet},
 		Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
-		Conditional = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic if, then, else, endif, switch, etc.
-		Keyword = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
-		Repeat = {fg = c.orange, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
+		Conditional = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
+		Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
+		Repeat = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
 		Boolean = {fg = c.blue_alt, bg = c.none, style = cfg.italic_boolean}, -- true , false
-		Function = {fg = c.blue, bg = c.none, style = cfg.italic_function .. cfg.bold},
+		Function = {fg = c.orange, bg = c.none, style = cfg.italic_function .. cfg.bold},
 		Identifier = {fg = c.blue, bg = c.none, style = cfg.italic_variable}, -- any variable name
 		String = {fg = c.green, bg = c.none}, -- Any string
 		Character = {fg = c.orange}, -- any character constant: 'c', '\n'
@@ -109,7 +111,7 @@ local function set_groups()
 		Float = {fg = c.yellow}, -- a floating point constant: 2.3e10
 		Statement = {fg = c.blue}, -- any statement
 		Label = {fg = c.cyan}, -- case, default, etc.
-		Operator = {fg = c.white}, -- sizeof", "+", "*", etc.
+		Operator = {fg = c.purple}, -- sizeof", "+", "*", etc.
 		Exception = {fg = c.blue}, -- try, catch, throw
 		PreProc = {fg = c.orange}, -- generic Preprocessor
 		Include = {fg = c.blue}, -- preprocessor #include
@@ -126,7 +128,8 @@ local function set_groups()
 		Underlined = {fg = c.cyan, bg = c.none, style = "underline"}, -- text that stands out, HTML links
 		Ignore = {fg = c.gray_alt}, -- left blank, hidden
 		Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
-		Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+		Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- the keywords TODO FIXME and XXX
+
 		-- HTML
 		htmlArg = {fg = c.orange},
 		htmlBold = {fg = c.orange, bg = c.none, style = "bold"},
@@ -144,6 +147,7 @@ local function set_groups()
 		htmlH3 = {fg = c.blue, style = "bold"},
 		htmlH4 = {fg = c.blue, style = "bold"},
 		htmlH5 = {fg = c.blue, style = "bold"},
+
 		-- Markdown
 		markdownH1 = {fg = c.blue, style = "bold"},
 		markdownH2 = {fg = c.blue, style = "bold"},
@@ -168,121 +172,104 @@ local function set_groups()
 		markdownCode = {fg = c.purple, bg = c.bg1},
 		markdownCodeBlock = {fg = c.green},
 		markdownCodeDelimiter = {fg = c.green},
-		-- TreeSitter highlight groups
-		TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
-		TSConditional = {fg = c.light_blue, style = cfg.italic_keyword}, -- For keywords related to conditionnals.
-		TSKeyword = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords that don't fall in previous categories.
-		TSAnnotation = {fg = orange}, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-		TSRepeat = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords related to loops.
-		TSAttribute = {fg = cyan}, -- (unstable) TODO: docs
-		TSKeywordFunction = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords used to define a fuction.
-		TSCharacter = {fg = orange}, -- For characters.
-		TSBoolean = {fg = c.orange, bg = c.none, style = cfg.italic_boolean}, -- true or false
-		TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold}, -- For fuction (calls and definitions).
-		TSMethod = {fg = c.purple, style = cfg.italic_function}, -- For method calls and definitions.
-		TSConstructor = {fg = red}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-		TSFuncBuiltin = {fg = c.orange, style = cfg.italic_function}, -- For builtin functions: `table.insert` in Lua.
-		TSConstant = {fg = violet}, -- For constants
-		TSVariable = {fg = c.light_pink, style = cfg.italic_variable}, -- Any variable name that does not have another highlight.
-		TSVariableBuiltin = {fg = c.cyan, style = cfg.italic_variable}, -- Variable names that are defined by the languages, like `this` or `self`.        TSConstBuiltin = {fg = orange}, -- For constant that are built in the language: `nil` in Lua.
-		TSConstMacro = {fg = c.cyan}, -- For constants that are defined by macros: `NULL` in C.
-		TSError = {fg = c.red}, -- For syntax/parser errors.
-		TSException = {fg = c.blue}, -- For exception related keywords.
-		TSField = {fg = c.red}, -- For fields.
-		TSFloat = {fg = c.red}, -- For floats.
-		TSFuncMacro = {fg = c.orange}, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-		TSInclude = {fg = c.blue}, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-		TSLabel = {fg = c.cyan}, -- For labels: `label:` in C and `:label:` in Lua.
-		TSNamespace = {fg = c.cyan}, -- For identifiers referring to modules and namespaces.
-		TSNumber = {fg = c.red}, -- For all numbers
-		TSOperator = {fg = c.blue}, -- For any operator: `+`, but also `->` and `*` in C.
-		TSParameter = {fg = c.violet}, -- For parameters of a function.
-		TSParameterReference = {fg = c.fg}, -- For references to parameters of a function.
-		TSProperty = {fg = c.violet}, -- Same as `TSField`.
-		TSPunctDelimiter = {fg = c.fg}, -- For delimiters ie: `.`
-		TSPunctBracket = {fg = c.purple}, -- For brackets and parens.
-		TSPunctSpecial = {fg = c.yellow}, -- For special punctutation that does not fall in the catagories before.
-		TSString = {fg = c.green}, -- For strings.
-		TSStringRegex = {fg = c.blue}, -- For regexes.
-		TSStringEscape = {fg = c.orange}, -- For escape characters within a string.
-		TSSymbol = {fg = c.orange}, -- For identifiers referring to symbols or atoms.
-		TSType = {fg = c.orange}, -- For types.
-		TSTypeBuiltin = {fg = c.cyan}, -- For builtin types.
-		TSTag = {fg = c.blue}, -- Tags like html tag names.
-		TSTagDelimiter = {fg = c.blue}, -- Tag delimiter like `<` `>` `/`
-		TSText = {fg = c.violet}, -- For strings considered text in a markup language.
-		TSTextReference = {fg = c.orange}, -- FIXME
-		TSEmphasis = {fg = c.violet}, -- For text to be represented with emphasis.
-		TSUnderline = {fg = c.fg, bg = c.none, style = "underline"}, -- For text to be represented with an underline.
-		TSStrike = {}, -- For strikethrough text.
-		TSTitle = {fg = c.fg, bg = c.none, style = "bold"}, -- Text that is part of a title.
-		TSLiteral = {fg = c.fg}, -- Literal text.
-		TSURI = {fg = c.purple}, -- Any URL like a link or email.
-		--TSNone =                    { },    -- TODO: docs
-		-- Lsp highlight groups
-		LspDiagnosticsDefaultError = {fg = c.red}, -- used for "Error" diagnostic virtual text
-		LspDiagnosticsSignError = {fg = c.red}, -- used for "Error" diagnostic signs in sign column
-		LspDiagnosticsFloatingError = {fg = c.red, style = "bold"}, -- used for "Error" diagnostic messages in the diagnostics float
-		LspDiagnosticsVirtualTextError = {fg = c.red, style = cfg.bold}, -- Virtual text "Error"
-		LspDiagnosticsUnderlineError = {fg = c.red, style = "undercurl", sp = c.red}, -- used to underline "Error" diagnostics.
-		LspDiagnosticsDefaultWarning = {fg = c.orange}, -- used for "Warning" diagnostic signs in sign column
-		LspDiagnosticsSignWarning = {fg = c.orange}, -- used for "Warning" diagnostic signs in sign column
-		LspDiagnosticsFloatingWarning = {fg = c.orange, style = "bold"}, -- used for "Warning" diagnostic messages in the diagnostics float
-		LspDiagnosticsVirtualTextWarning = {fg = c.orange, style = cfg.bold}, -- Virtual text "Warning"
-		LspDiagnosticsUnderlineWarning = {fg = c.orange, style = "undercurl", sp = c.orange}, -- used to underline "Warning" diagnostics.
-		LspDiagnosticsDefaultInformation = {fg = c.blue}, -- used for "Information" diagnostic virtual text
-		LspDiagnosticsSignInformation = {fg = c.blue}, -- used for "Information" diagnostic signs in sign column
-		LspDiagnosticsFloatingInformation = {fg = c.blue, style = "bold"}, -- used for "Information" diagnostic messages in the diagnostics float
-		LspDiagnosticsVirtualTextInformation = {fg = c.blue, style = cfg.bold}, -- Virtual text "Information"
-		LspDiagnosticsUnderlineInformation = {fg = c.blue, style = "undercurl", sp = c.blue}, -- used to underline "Information" diagnostics.
-		LspDiagnosticsDefaultHint = {fg = c.cyan}, -- used for "Hint" diagnostic virtual text
-		LspDiagnosticsSignHint = {fg = c.cyan}, -- used for "Hint" diagnostic signs in sign column
-		LspDiagnosticsFloatingHint = {fg = c.cyan, style = "bold"}, -- used for "Hint" diagnostic messages in the diagnostics float
-		LspDiagnosticsVirtualTextHint = {fg = c.cyan, style = cfg.bold}, -- Virtual text "Hint"
-		LspDiagnosticsUnderlineHint = {fg = c.cyan, style = "undercurl", sp = c.blue}, -- used to underline "Hint" diagnostics.
-		LspReferenceText = {fg = c.fg, bg = c.purple}, -- used for highlighting "text" references
-		LspReferenceRead = {fg = c.fg, bg = c.purple}, -- used for highlighting "read" references
-		LspReferenceWrite = {fg = c.fg, bg = c.purple}, -- used for highlighting "write" references
-		-- Plugins highlight groups
-		-- Diff
+
+		-- TreeSitter
+		TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
+		TSConditional = {fg = c.light_blue, style = cfg.italic_keyword},
+		TSKeyword = {fg = c.blue, style = cfg.italic_keyword},
+		TSAnnotation = {fg = orange},
+		TSRepeat = {fg = c.blue, style = cfg.italic_keyword},
+		TSAttribute = {fg = cyan},
+		TSKeywordFunction = {fg = c.blue, style = cfg.italic_keyword},
+		TSCharacter = {fg = orange},
+		TSBoolean = {fg = c.orange, bg = c.none, style = cfg.italic_boolean},
+		TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold},
+		TSMethod = {fg = c.purple, style = cfg.italic_function},
+		TSConstructor = {fg = red},
+		TSFuncBuiltin = {fg = c.orange, style = cfg.italic_function},
+		TSConstant = {fg = violet},
+		TSVariable = {fg = c.light_pink, style = cfg.italic_variable},
+		TSVariableBuiltin = {fg = c.cyan, style = cfg.italic_variable},
+		TSConstMacro = {fg = c.cyan},
+		TSError = {fg = c.red},
+		TSException = {fg = c.blue},
+		TSField = {fg = c.red},
+		TSFloat = {fg = c.red},
+		TSFuncMacro = {fg = c.orange},
+		TSInclude = {fg = c.blue},
+		TSLabel = {fg = c.cyan},
+		TSNamespace = {fg = c.cyan},
+		TSNumber = {fg = c.red},
+		TSOperator = {fg = c.blue},
+		TSParameter = {fg = c.violet},
+		TSParameterReference = {fg = c.fg},
+		TSProperty = {fg = c.violet},
+		TSPunctDelimiter = {fg = c.fg},
+		TSPunctBracket = {fg = c.purple},
+		TSPunctSpecial = {fg = c.yellow},
+		TSString = {fg = c.green},
+		TSStringRegex = {fg = c.blue},
+		TSStringEscape = {fg = c.orange},
+		TSSymbol = {fg = c.orange},
+		TSType = {fg = c.orange},
+		TSTypeBuiltin = {fg = c.cyan},
+		TSTag = {fg = c.blue},
+		TSTagDelimiter = {fg = c.blue},
+		TSText = {fg = c.violet},
+		TSTextReference = {fg = c.orange},
+		TSEmphasis = {fg = c.violet},
+		TSUnderline = {fg = c.fg, bg = c.none, style = "underline"},
+		TSStrike = {},
+		TSTitle = {fg = c.fg, bg = c.none, style = "bold"},
+		TSLiteral = {fg = c.fg},
+		TSURI = {fg = c.purple},
+		-- TSNone = { }, -- TODO: docs
+
+		-- diff
 		diffAdded = {fg = c.diff_green},
 		diffRemoved = {fg = c.diff_red},
-		diffChanged = {fg = c.diff_blue},
-		diffOldFile = {fg = c.bg4},
-		diffNewFile = {fg = c.fg},
-		diffFile = {fg = c.gray},
-		diffLine = {fg = c.cyan},
-		diffIndexLine = {fg = c.purple},
+		diffFile = {fg = c.blue},
+		diffIndexLine = {fg = c.blue},
+		diffNewFile = {fg = c.blue},
+		diffIndexFile = {fg = c.white},
+		diffOldFile = {fg = c.red},
+		diffSubname = {fg = c.white},
+		diffLine = {fg = c.violet},
+		diffFileId = {fg = c.blue},
+		diffChanged = {fg = c.diff_yellow},
+
+		-- git
+		gitcommitSummary = {fg = c.fg},
+		gitcommitHeader = {fg = c.blue},
+		gitcommitType = {fg = c.yellow},
+		gitcommitFile = {fg = c.orange},
+
 		-- GitSigns
-		GitSignsAdd = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
-		GitSignsAddNr = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
-		GitSignsAddLn = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
-		GitSignsChange = {fg = c.diff_yellow}, -- diff mode: Changed line |diff.txt|
-		GitSignsChangeNr = {fg = c.diff_yellow}, -- diff mode: Changed line |diff.txt|
-		GitSignsChangeLn = {fg = c.diff_yellow}, -- diff mode: Changed line |diff.txt|
-		GitSignsDelete = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
-		GitSignsDeleteNr = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
-		GitSignsDeleteLn = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
+		GitSignsAdd = {fg = c.diff_green},
+		GitSignsAddNr = {fg = c.diff_green},
+		GitSignsAddLn = {fg = c.diff_green},
+		GitSignsChange = {fg = c.diff_yellow},
+		GitSignsChangeNr = {fg = c.diff_yellow},
+		GitSignsChangeLn = {fg = c.diff_yellow},
+		GitSignsDelete = {fg = c.diff_red},
+		GitSignsDeleteNr = {fg = c.diff_red},
+		GitSignsDeleteLn = {fg = c.diff_red},
+
 		-- Telescope
 		TelescopePromptBorder = {fg = c.green},
 		TelescopeResultsBorder = {fg = c.blue},
 		TelescopePreviewBorder = {fg = c.purple},
-		-- NvimTree
-		NvimTreeRootFolder = {fg = c.cyan, style = "italic"},
-		NvimTreeNormal = {fg = c.fg, bg = c.bg0},
-		NvimTreeGitDirty = {fg = c.diff_yellow},
-		NvimTreeGitNew = {fg = c.green},
-		NvimTreeImageFile = {fg = c.purple},
-		NvimTreeExecFile = {fg = c.green},
-		NvimTreeSpecialFile = {fg = c.yellow, style = "underline"},
-		NvimTreeFolderName = {fg = c.blue},
-		NvimTreeEmptyFolderName = {fg = c.gray},
-		NvimTreeFolderIcon = {fg = c.gray},
-		NvimTreeIndentMarker = {fg = c.disabled},
-		LspDiagnosticsError = {fg = c.red},
-		LspDiagnosticsWarning = {fg = c.orange},
-		LspDiagnosticsInformation = {fg = c.gray_alt},
-		LspDiagnosticsHint = {fg = c.blue},
+
+		-- LSP
+		LspDiagnosticsDefaultHint = {fg = c.purple, style = "italic"},
+		LspDiagnosticsSignHint = {fg = c.purple},
+		LspDiagnosticsDefaultError = {fg = c.red, style = "italic"},
+		LspDiagnosticsSignError = {fg = c.red},
+		LspDiagnosticsDefaultWarning = {fg = c.orange, style = "italic"},
+		LspDiagnosticsSignWarning = {fg = c.orange},
+		LspDiagnosticsDefaultInformation = {fg = c.yellow, style = "italic"},
+		LspDiagnosticsSignInformation = {fg = c.yellow},
+
 		-- WhichKey
 		WhichKey = {fg = c.purple, style = "bold"},
 		WhichKeyGroup = {fg = c.violet, style = "italic"},
@@ -290,31 +277,21 @@ local function set_groups()
 		WhichKeySeperator = {fg = c.green},
 		WhichKeyFloating = {bg = c.bg1},
 		WhichKeyFloat = {bg = c.bg1},
-		-- LspSaga
-		DiagnosticError = {fg = c.red},
-		DiagnosticWarning = {fg = c.orange},
-		DiagnosticInformation = {fg = c.blue},
-		DiagnosticHint = {fg = c.cyan},
-		DiagnosticTruncateLine = {fg = c.fg},
-		LspFloatWinNormal = {bg = c.bg0},
-		LspFloatWinBorder = {fg = c.purple},
-		LspSagaBorderTitle = {fg = c.cyan},
-		LspSagaHoverBorder = {fg = c.gray_alt},
-		LspSagaRenameBorder = {fg = c.green},
-		LspSagaDefPreviewBorder = {fg = c.green},
-		LspSagaCodeActionBorder = {fg = c.blue},
-		LspSagaFinderSelection = {fg = c.green},
-		LspSagaCodeActionTitle = {fg = c.gray_alt},
-		LspSagaCodeActionContent = {fg = c.purple},
-		LspSagaSignatureHelpBorder = {fg = c.purple},
-		ReferencesCount = {fg = c.purple},
-		DefinitionCount = {fg = c.purple},
-		DefinitionIcon = {fg = c.blue},
-		ReferencesIcon = {fg = c.blue},
-		TargetWord = {fg = c.cyan},
-		-- BufferLine
-		BufferLineIndicatorSelected = {fg = c.green},
-		BufferLineFill = {bg = c.bg3},
+
+		-- Julia
+		juliaFunctionCall = {fg = c.light_blue},
+		-- juliaCommentL = {gray},
+		-- juliaCommentDelim = {gray},
+
+		-- BufTabLine
+		BufTabLineCurrent = {fg = c.blue, bg = c.bg0},
+		BufTabLineActive = {fg = c.bg4, bg = c.bg1},
+		BufTabLineHidden = {fg = c.bg4, bg = c.bg1},
+		BufTabLineFill = {fg = c.bg1, bg = c.bg1},
+		BufTabLineModifiedCurrent = {fg = c.yellow},
+		BufTabLineModifiedActive = {fg = c.yellow},
+		BufTabLineModifiedHidden = {fg = c.yellow},
+
 	}
 
     local overrides = vim.g.tender_overrides
