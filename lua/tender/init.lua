@@ -28,8 +28,8 @@ local function set_groups()
 	local groups = {
 
 		-- Editor
-		SpecialKey = {fg = c.bg3},
-		EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
+		SpecialKey = {fg = c.bg4},
+		EndOfBuffer = {fg = c.bg4}, -- ~ lines at the end of a buffer
 		NonText = {fg = c.bg3},
 		Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
 		ErrorMsg = {fg = c.red},
