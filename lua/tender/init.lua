@@ -91,25 +91,25 @@ local function set_groups()
 		healthError = {fg = c.red},
 		healthSuccess = {fg = c.green},
 		healthWarning = {fg = c.orange},
-		--common
+		-- Common
 		Type = {fg = c.cyan}, -- int, long, char, etc.
 		StorageClass = {fg = c.cyan}, -- static, register, volatile, etc.
 		Structure = {fg = c.orange}, -- struct, union, enum, etc.
 		Constant = {fg = c.violet}, -- any constant
 		Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
 		Conditional = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic if, then, else, endif, switch, etc.
-		Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
+		Keyword = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
 		Repeat = {fg = c.orange, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
 		Boolean = {fg = c.blue_alt, bg = c.none, style = cfg.italic_boolean}, -- true , false
 		Function = {fg = c.blue, bg = c.none, style = cfg.italic_function .. cfg.bold},
 		Identifier = {fg = c.blue, bg = c.none, style = cfg.italic_variable}, -- any variable name
 		String = {fg = c.green, bg = c.none}, -- Any string
 		Character = {fg = c.orange}, -- any character constant: 'c', '\n'
-		Number = {fg = c.red}, -- a number constant: 5
-		Float = {fg = c.red}, -- a floating point constant: 2.3e10
+		Number = {fg = c.yellow}, -- a number constant: 5
+		Float = {fg = c.yellow}, -- a floating point constant: 2.3e10
 		Statement = {fg = c.blue}, -- any statement
 		Label = {fg = c.cyan}, -- case, default, etc.
-		Operator = {fg = c.blue}, -- sizeof", "+", "*", etc.
+		Operator = {fg = c.white}, -- sizeof", "+", "*", etc.
 		Exception = {fg = c.blue}, -- try, catch, throw
 		PreProc = {fg = c.orange}, -- generic Preprocessor
 		Include = {fg = c.blue}, -- preprocessor #include
@@ -126,7 +126,7 @@ local function set_groups()
 		Underlined = {fg = c.cyan, bg = c.none, style = "underline"}, -- text that stands out, HTML links
 		Ignore = {fg = c.gray_alt}, -- left blank, hidden
 		Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
-		Todo = {fg = c.cyan, bg = c.none, style = "bold,italic"}, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+		Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 		-- HTML
 		htmlArg = {fg = c.orange},
 		htmlBold = {fg = c.orange, bg = c.none, style = "bold"},
@@ -168,11 +168,6 @@ local function set_groups()
 		markdownCode = {fg = c.purple, bg = c.bg1},
 		markdownCodeBlock = {fg = c.green},
 		markdownCodeDelimiter = {fg = c.green},
-		-- Dashboard
-		DashboardShortCut = {fg = c.red},
-		DashboardHeader = {fg = c.purple},
-		DashboardCenter = {fg = c.blue},
-		DashboardFooter = {fg = c.green, style = "italic"},
 		-- TreeSitter highlight groups
 		TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
 		TSConditional = {fg = c.light_blue, style = cfg.italic_keyword}, -- For keywords related to conditionnals.
@@ -249,10 +244,6 @@ local function set_groups()
 		LspReferenceRead = {fg = c.fg, bg = c.purple}, -- used for highlighting "read" references
 		LspReferenceWrite = {fg = c.fg, bg = c.purple}, -- used for highlighting "write" references
 		-- Plugins highlight groups
-		-- LspTrouble
-		LspTroubleText = {fg = c.bg4},
-		LspTroubleCount = {fg = c.purple, bg = c.bg3},
-		LspTroubleNormal = {fg = c.fg, bg = c.bg0},
 		-- Diff
 		diffAdded = {fg = c.diff_green},
 		diffRemoved = {fg = c.diff_red},
@@ -262,18 +253,6 @@ local function set_groups()
 		diffFile = {fg = c.gray},
 		diffLine = {fg = c.cyan},
 		diffIndexLine = {fg = c.purple},
-		-- Neogit
-		NeogitBranch = {fg = c.gray_alt},
-		NeogitRemote = {fg = c.purple},
-		NeogitHunkHeader = {fg = c.fg, bg = c.cyan},
-		NeogitHunkHeaderHighlight = {fg = c.blue},
-		NeogitDiffContextHighlight = {fg = c.fg},
-		NeogitDiffDeleteHighlight = {fg = c.red},
-		NeogitDiffAddHighlight = {fg = c.green},
-		-- GitGutter
-		GitGutterAdd = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
-		GitGutterChange = {fg = c.diff_blue}, -- diff mode: Changed line |diff.txt|
-		GitGutterDelete = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
 		-- GitSigns
 		GitSignsAdd = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
 		GitSignsAddNr = {fg = c.diff_green}, -- diff mode: Added line |diff.txt|
@@ -284,31 +263,10 @@ local function set_groups()
 		GitSignsDelete = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteNr = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteLn = {fg = c.diff_red}, -- diff mode: Deleted line |diff.txt|
-		-- vim-signify
-		SignifySignAdd = {fg = c.diff_green},
-		SignifySignChange = {fg = c.diff_yellow},
-		SignifySignDelete = {fg = c.diff_red},
-		-- Syntastic
-		SyntasticError = {fg = c.red},
-		SyntasticWarning = {fg = c.yellow},
-		SyntasticErrorSign = {fg = c.red},
-		SyntasticWarningSign = {fg = c.yellow},
 		-- Telescope
 		TelescopePromptBorder = {fg = c.green},
 		TelescopeResultsBorder = {fg = c.blue},
 		TelescopePreviewBorder = {fg = c.purple},
-		-- Nerdtree
-		NERDTreeDir = {fg = c.purple},
-		NERDTreeDirSlash = {fg = c.blue},
-		NERDTreeOpenable = {fg = c.orange},
-		NERDTreeClosable = {fg = c.orange},
-		NERDTreeFile = {fg = c.blue},
-		NERDTreeExecFile = {fg = c.green},
-		NERDTreeUp = {fg = c.gray},
-		NERDTreeCWD = {fg = c.green},
-		NERDTreeHelp = {fg = c.gray_alt},
-		NERDTreeToggleOn = {fg = c.green},
-		NERDTreeToggleOff = {fg = c.red},
 		-- NvimTree
 		NvimTreeRootFolder = {fg = c.cyan, style = "italic"},
 		NvimTreeNormal = {fg = c.fg, bg = c.bg0},
@@ -325,16 +283,6 @@ local function set_groups()
 		LspDiagnosticsWarning = {fg = c.orange},
 		LspDiagnosticsInformation = {fg = c.gray_alt},
 		LspDiagnosticsHint = {fg = c.blue},
-		-- Ale-vim
-		ALEError = {fg = c.red},
-		ALEWarning = {fg = c.orange},
-		ALEInfo = {fg = c.blue},
-		ALEErrorSign = {fg = c.red},
-		ALEWarningSign = {fg = c.orange},
-		ALEInfoSign = {fg = c.blue},
-		ALEVirtualTextError = {fg = c.red},
-		ALEVirtualTextWarning = {fg = c.yellow},
-		ALEVirtualTextInfo = {fg = c.blue},
 		-- WhichKey
 		WhichKey = {fg = c.purple, style = "bold"},
 		WhichKeyGroup = {fg = c.violet, style = "italic"},
@@ -367,62 +315,6 @@ local function set_groups()
 		-- BufferLine
 		BufferLineIndicatorSelected = {fg = c.green},
 		BufferLineFill = {bg = c.bg3},
-		-- Sneak
-		Sneak = {fg = c.bg0, bg = c.green},
-		SneakScope = {bg = c.bg4},
-		-- Indent Blankline
-		IndentBlanklineChar = {fg = c.disabled},
-		IndentBlanklineContextChar = {fg = c.cyan},
-		-- Nvim dap
-		DapBreakpoint = {fg = c.red},
-		DapStopped = {fg = c.green},
-		-- Startify
-		StartifyNumber = {fg = c.purple},
-		StartifySelect = {fg = c.green},
-		StartifyBracket = {fg = c.gray},
-		StartifySpecial = {fg = c.cyan},
-		StartifyVar = {fg = c.blue},
-		StartifyPath = {fg = c.blue},
-		StartifyFile = {fg = c.green},
-		StartifySlash = {fg = c.violet},
-		StartifyHeader = {fg = c.purple},
-		StartifySection = {fg = c.red},
-		StartifyFooter = {fg = c.green},
-		-- EasyMotion
-		EasyMotionTarget = {fg = c.red, bg = c.none, style = "bold"},
-		EasyMotionTarget2First = {fg = c.red, bg = c.none, style = "bold"},
-		EasyMotionTarget2Second = {fg = c.red, bg = c.none, style = "bold"},
-		-- CoC
-		CocErrorSign = {fg = c.red},
-		CocWarningSign = {fg = c.orange},
-		CocInfoSign = {fg = c.green},
-		CocHintSign = {fg = c.blue},
-		CocErrorFloat = {fg = c.red},
-		CocWarningFloat = {fg = c.orange},
-		CocInfoFloat = {fg = c.green},
-		CocHintFloat = {fg = c.blue},
-		CocDiagnosticsError = {fg = c.red},
-		CocDiagnosticsWarning = {fg = c.orange},
-		CocDiagnosticsInfo = {fg = c.green},
-		CocDiagnosticsHint = {fg = c.blue},
-		CocSelectedText = {fg = c.red},
-		CocCodeLens = {fg = c.gray},
-		CocErrorHighlight = {fg = c.red},
-		CocWarningHighlight = {fg = c.orange},
-		CocInfoHighlight = {fg = c.green},
-		CocHintHighlight = {fg = c.blue},
-		CocExplorerIndentLine = {fg = c.gray},
-		CocExplorerBufferRoot = {fg = c.cyan},
-		CocExplorerFileRoot = {fg = c.cyan},
-		CocExplorerBufferFullPath = {fg = c.gray},
-		CocExplorerFileFullPath = {fg = c.gray},
-		CocExplorerBufferReadonly = {fg = c.purple},
-		CocExplorerBufferModified = {fg = c.purple},
-		CocExplorerBufferNameVisible = {fg = c.orange},
-		CocExplorerFileReadonly = {fg = c.purple},
-		CocExplorerFileModified = {fg = c.purple},
-		CocExplorerFileHidden = {fg = c.gray},
-		CocExplorerHelpLine = {fg = c.purple}
 	}
 
     local overrides = vim.g.tender_overrides
