@@ -256,9 +256,9 @@ local function set_groups()
 		GitSignsDeleteLn = {fg = c.diff_red},
 
 		-- Telescope
-		TelescopePromptBorder = {fg = c.green},
-		TelescopeResultsBorder = {fg = c.blue},
-		TelescopePreviewBorder = {fg = c.purple},
+		TelescopePromptBorder = {fg = c.white},
+		TelescopeResultsBorder = {fg = c.white},
+		TelescopePreviewBorder = {fg = c.white},
 
 		-- LSP
 		LspDiagnosticsDefaultHint = {fg = c.purple, style = "italic"},
