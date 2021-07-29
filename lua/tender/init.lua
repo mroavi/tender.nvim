@@ -173,7 +173,7 @@ local function set_groups()
 		markdownCodeBlock = {fg = c.green},
 		markdownCodeDelimiter = {fg = c.green},
 
-		-- TreeSitter
+		-- TreeSitter TODO: update based on my old marlin color scheme
 		TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
 		TSConditional = {fg = c.light_blue, style = cfg.italic_keyword},
 		TSKeyword = {fg = c.blue, style = cfg.italic_keyword},
