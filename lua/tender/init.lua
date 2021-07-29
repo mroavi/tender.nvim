@@ -26,67 +26,67 @@ end
 
 local function set_groups()
 	local groups = {
-		-- Base
 
-		-- Editor highlight groups
-		Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
-		SignColumn = {fg = c.fg, bg = c.bg0},
+		-- Editor
+		SpecialKey = {fg = c.bg3},
 		EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
-		NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
-		FloatBorder = {fg = c.blue, bg = c.bg2},
-		ColorColumn = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
-		Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
-		Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
-		CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
+		NonText = {fg = c.bg3},
 		Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
+		ErrorMsg = {fg = c.red},
+		IncSearch = {fg = c.bg0, bg = c.blue},
+		Search = {fg = c.bg0, bg = c.yellow},
+		MoreMsg = {fg = c.green, style = cfg.bold},
+		ModeMsg = {fg = c.yellow, style = cfg.bold},
+		LineNr = {fg = c.disabled},
+		CursorLineNr = {fg = c.white},
+		Question = {fg = c.green, style = cfg.bold},
+		StatusLine = {fg = c.blue, bg = c.bg2},
+		StatusLineNC = {fg = c.gray, bg = c.bg2},
+		VertSplit = {fg = c.gray},
+		Title = {fg = c.blue, bg = c.none, style = cfg.bold},
+		Visual = {bg = c.bg3},
+		WarningMsg = {fg = c.orange, style = cfg.bold},
+		WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
+		Folded = {fg = c.gray, c.none, style = "italic"},
+		FoldColumn = {fg = c.blue},
 		DiffAdd = {fg = c.diff_green, bg = c.none, style = "reverse"}, -- diff mode: Added line
 		DiffChange = {fg = c.diff_blue, bg = c.none, style = "reverse"}, --  diff mode: Changed line
 		DiffDelete = {fg = c.diff_red, bg = c.none, style = "reverse"}, -- diff mode: Deleted line
 		DiffText = {fg = c.fg, bg = c.none, style = "reverse"}, -- diff mode: Changed text within a changed line
-		ErrorMsg = {fg = c.red},
-		Folded = {fg = c.gray, c.none, style = "italic"},
-		FoldColumn = {fg = c.blue},
-		IncSearch = {fg = c.bg0, bg = c.blue},
-		LineNr = {fg = c.disabled},
-		CursorLineNr = {fg = c.cyan},
-		MatchParen = {fg = c.blue, style = "underline"},
-		ModeMsg = {fg = c.yellow, style = cfg.bold},
-		MoreMsg = {fg = c.green, style = cfg.bold},
-		NonText = {fg = c.bg3},
+		SignColumn = {fg = c.fg, bg = c.bg0},
+		Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
+		SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
+		SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
+		SpellRare = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
+		SpellLocal = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
 		Pmenu = {fg = c.fg, bg = c.bg3},
 		PmenuSel = {fg = c.bg0, bg = c.blue},
 		PmenuSbar = {fg = c.fg, bg = c.bg2},
 		PmenuThumb = {fg = c.fg, bg = c.gray},
-		Question = {fg = c.green, style = cfg.bold},
+		Tabline = {fg = c.gray},
+		TablineSel = {fg = c.bg0, bg = c.blue},
+		TabLineFill = {fg = c.fg},
+		CursorColumn = {fg = c.none, bg = c.bg3},
+		CursorLine = {fg = c.none, bg = c.bg3},
+		ColorColumn = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
 		QuickFixLine = {bg = c.bg2},
+		NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
+		FloatBorder = {fg = c.blue, bg = c.bg2},
+		Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
+		Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
+
+		CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
+		MatchParen = {fg = c.blue, style = "underline"},
 		qfLineNr = {fg = c.blue, bg = c.bg1},
-		Search = {fg = c.bg0, bg = c.yellow},
-		SpecialKey = {fg = c.bg3},
-		SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
-		SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
-		SpellLocal = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
-		SpellRare = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
-		StatusLine = {fg = c.blue, bg = c.bg2},
-		StatusLineNC = {fg = c.gray, bg = c.bg2},
 		StatusLineTerm = {fg = c.fg, bg = c.bg3},
 		StatusLineTermNC = {fg = c.fg, bg = c.bg3},
-		TabLineFill = {fg = c.fg},
-		TablineSel = {fg = c.bg0, bg = c.blue},
-		Tabline = {fg = c.gray},
-		Title = {fg = c.cyan, bg = c.none, style = cfg.bold},
-		Visual = {bg = c.bg3},
 		VisualNOS = {fg = c.none, style = "reverse"},
-		WarningMsg = {fg = c.orange, style = cfg.bold},
-		WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
-		CursorColumn = {fg = c.none, bg = c.fg},
-		CursorLine = {fg = c.none, bg = c.bg1},
 		ToolbarLine = {fg = c.fg, bg = c.bg1},
 		ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
 		NormalMode = {fg = c.cyan, bg = c.none, style = "reverse"},
 		InsertMode = {fg = c.green, bg = c.none, style = "reverse"},
 		ReplacelMode = {fg = c.red, bg = c.none, style = "reverse"},
 		VisualMode = {fg = c.cyan, bg = c.none, style = "reverse"},
-		VertSplit = {fg = c.gray},
 		CommandMode = {fg = c.gray, bg = c.none, style = "reverse"},
 		Warnings = {fg = c.orange},
 		healthError = {fg = c.red},
@@ -94,41 +94,41 @@ local function set_groups()
 		healthWarning = {fg = c.orange},
 
 		-- Common
-		Type = {fg = c.light_blue}, -- int, long, char, etc.
+		Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
+		Constant = {fg = c.orange},
+		Special = {fg = c.blue, bg = c.none, style = "italic"}, -- any special symbol
+		Statement = {fg = c.purple}, -- any statement
+		PreProc = {fg = c.orange}, -- generic Preprocessor
+		Underlined = {fg = c.light_blue, bg = c.none, style = "underline"}, -- text that stands out, HTML links
+		Ignore = {fg = c.gray_alt}, -- left blank, hidden
+		Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- the keywords TODO FIXME and XXX
+		Character = {fg = c.green}, -- any character constant: 'c', '\n'
+		Boolean = {fg = c.blue_alt, bg = c.none, style = cfg.italic_boolean}, -- true , false
+		Float = {fg = c.yellow}, -- a floating point constant: 2.3e10
+		Function = {fg = c.orange, bg = c.none, style = cfg.italic_function .. cfg.bold},
+		Conditional = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
+		Repeat = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
+		Label = {fg = c.light_blue}, -- case, default, etc.
+		Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
+		Exception = {fg = c.purple}, -- try, catch, throw
+		Include = {fg = c.purple}, -- preprocessor #include
+		Define = {fg = c.purple}, -- preprocessor #define
+		Macro = {fg = c.light_blue}, -- same as Define
 		StorageClass = {fg = c.light_blue}, -- static, register, volatile, etc.
 		Structure = {fg = c.orange}, -- struct, union, enum, etc.
-		Constant = {fg = c.violet},
-		Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
-		Conditional = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
-		Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
-		Repeat = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
-		Boolean = {fg = c.blue_alt, bg = c.none, style = cfg.italic_boolean}, -- true , false
-		Function = {fg = c.orange, bg = c.none, style = cfg.italic_function .. cfg.bold},
+		Typedef = {fg = c.orange}, -- A typedef
+		Tag = {fg = c.red}, -- you can use CTRL-] on this
+		SpecialComment = {fg = c.violet}, -- special things inside a comment
+		Debug = {fg = c.red}, -- debugging statements
+		SpecialChar = {fg = c.orange}, -- special character in a constant
+		Type = {fg = c.blue}, -- int, long, char, etc.
 		Identifier = {fg = c.blue, bg = c.none, style = cfg.italic_variable}, -- any variable name
 		String = {fg = c.green, bg = c.none}, -- Any string
-		Character = {fg = c.orange}, -- any character constant: 'c', '\n'
 		Number = {fg = c.yellow}, -- a number constant: 5
-		Float = {fg = c.yellow}, -- a floating point constant: 2.3e10
-		Statement = {fg = c.blue}, -- any statement
-		Label = {fg = c.cyan}, -- case, default, etc.
 		Operator = {fg = c.purple}, -- sizeof", "+", "*", etc.
-		Exception = {fg = c.blue}, -- try, catch, throw
-		PreProc = {fg = c.orange}, -- generic Preprocessor
-		Include = {fg = c.blue}, -- preprocessor #include
-		Define = {fg = c.cyan}, -- preprocessor #define
-		Macro = {fg = c.blue}, -- same as Define
-		Typedef = {fg = c.cyan}, -- A typedef
-		PreCondit = {fg = c.cyan}, -- preprocessor #if, #else, #endif, etc.
-		Special = {fg = c.blue, bg = c.none, style = "italic"}, -- any special symbol
-		SpecialChar = {fg = c.orange}, -- special character in a constant
-		Tag = {fg = c.red}, -- you can use CTRL-] on this
+		PreCondit = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
 		Delimiter = {fg = c.yellow}, -- character that needs attention like , or .
-		SpecialComment = {fg = c.blue}, -- special things inside a comment
-		Debug = {fg = c.red}, -- debugging statements
-		Underlined = {fg = c.cyan, bg = c.none, style = "underline"}, -- text that stands out, HTML links
-		Ignore = {fg = c.gray_alt}, -- left blank, hidden
 		Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
-		Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- the keywords TODO FIXME and XXX
 
 		-- HTML
 		htmlArg = {fg = c.orange},
