@@ -1,0 +1,15 @@
+doom-one	tender.txt	/*doom-one*
+tender	tender.txt	/*tender*
+tender-configuration	tender.txt	/*tender-configuration*
+tender-contents	tender.txt	/*tender-contents*
+tender-faq	tender.txt	/*tender-faq*
+tender-introduction	tender.txt	/*tender-introduction*
+tender-usage	tender.txt	/*tender-usage*
+tender.txt	tender.txt	/*tender.txt*
+vim.g.tender_bold	tender.txt	/*vim.g.tender_bold*
+vim.g.tender_italic_boolean	tender.txt	/*vim.g.tender_italic_boolean*
+vim.g.tender_italic_comment	tender.txt	/*vim.g.tender_italic_comment*
+vim.g.tender_italic_function	tender.txt	/*vim.g.tender_italic_function*
+vim.g.tender_italic_keyword	tender.txt	/*vim.g.tender_italic_keyword*
+vim.g.tender_italic_variable	tender.txt	/*vim.g.tender_italic_variable*
+vim.g.tender_style	tender.txt	/*vim.g.tender_style*
