@@ -8,7 +8,7 @@ local function set_terminal_colors()
 	vim.g.terminal_color_1 = c.cyan
 	vim.g.terminal_color_2 = c.green
 	vim.g.terminal_color_3 = c.blue
-	vim.g.terminal_color_4 = c.yellow
+	vim.g.terminal_color_4 = c.blue
 	vim.g.terminal_color_5 = c.purple
 	vim.g.terminal_color_6 = c.blue
 	vim.g.terminal_color_7 = c.blue
