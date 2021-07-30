@@ -38,7 +38,7 @@ local function set_groups()
 		MoreMsg = {fg = c.green, style = cfg.bold},
 		ModeMsg = {fg = c.yellow, style = cfg.bold},
 		LineNr = {fg = c.bg4},
-		CursorLineNr = {fg = c.bg6},
+		CursorLineNr = {fg = c.bg5},
 		Question = {fg = c.green, style = cfg.bold},
 		StatusLine = {fg = c.blue, bg = c.bg2},
 		StatusLineNC = {fg = c.gray, bg = c.bg2},
