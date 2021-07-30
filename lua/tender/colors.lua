@@ -63,6 +63,8 @@ function colors.generate()
 		colors.bg2 = "#393939"
 		colors.bg3 = "#444444"
 		colors.bg4 = "#666666"
+		colors.bg5 = "#999999"
+		colors.bg6 = "#bbbbbb"
 	end
 end
 
