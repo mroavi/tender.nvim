@@ -261,8 +261,8 @@ local function set_groups()
 		TelescopePreviewBorder = {fg = c.white},
 
 		-- LSP
-		LspDiagnosticsDefaultHint = {fg = c.purple, style = "italic"},
-		LspDiagnosticsSignHint = {fg = c.purple},
+		LspDiagnosticsDefaultHint = {fg = c.light_pink, style = "italic"},
+		LspDiagnosticsSignHint = {fg = c.light_pink},
 		LspDiagnosticsDefaultError = {fg = c.red, style = "italic"},
 		LspDiagnosticsSignError = {fg = c.red},
 		LspDiagnosticsDefaultWarning = {fg = c.orange, style = "italic"},
