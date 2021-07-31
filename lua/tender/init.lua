@@ -292,6 +292,10 @@ local function set_groups()
 		BufTabLineModifiedActive = {fg = c.yellow},
 		BufTabLineModifiedHidden = {fg = c.yellow},
 
+		-- compe
+		CompeDocumentation = {bg = c.bg0},
+		CompeDocumentationBorder = {fg = c.white, bg = c.bg0},
+
 	}
 
     local overrides = vim.g.tender_overrides
