@@ -49,9 +49,9 @@ local function set_groups()
 		WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
 		Folded = {fg = c.gray, c.none, style = "italic"},
 		FoldColumn = {fg = c.blue},
-		DiffAdd = {fg = c.diff_green, bg = c.none, style = "reverse"}, -- diff mode: Added line
-		DiffChange = {fg = c.diff_blue, bg = c.none, style = "reverse"}, --  diff mode: Changed line
-		DiffDelete = {fg = c.diff_red, bg = c.none, style = "reverse"}, -- diff mode: Deleted line
+		DiffAdd = {fg = c.diff_green, bg = c.none}, -- diff mode: Added line
+		DiffChange = {fg = c.diff_yellow, bg = c.none}, --  diff mode: Changed line
+		DiffDelete = {fg = c.diff_red, bg = c.none}, -- diff mode: Deleted line
 		DiffText = {fg = c.fg, bg = c.none, style = "reverse"}, -- diff mode: Changed text within a changed line
 		SignColumn = {fg = c.fg, bg = c.bg0},
 		Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
