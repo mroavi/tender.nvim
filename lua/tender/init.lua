@@ -117,7 +117,7 @@ local function set_groups()
 		StorageClass = {fg = c.light_blue}, -- static, register, volatile, etc.
 		Structure = {fg = c.orange}, -- struct, union, enum, etc.
 		Typedef = {fg = c.orange}, -- A typedef
-		Tag = {fg = c.red}, -- you can use CTRL-] on this
+		Tag = {fg = c.blue}, -- you can use CTRL-] on this
 		SpecialComment = {fg = c.violet}, -- special things inside a comment
 		Debug = {fg = c.red}, -- debugging statements
 		SpecialChar = {fg = c.orange}, -- special character in a constant
