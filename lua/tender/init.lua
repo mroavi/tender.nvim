@@ -142,11 +142,11 @@ local function set_groups()
 		htmlTagN = {fg = c.blue},
 		htmlTagName = {fg = c.blue, cfg.bold},
 		htmlTitle = {fg = c.fg},
-		htmlH1 = {fg = c.blue, style = "bold"},
-		htmlH2 = {fg = c.blue, style = "bold"},
-		htmlH3 = {fg = c.blue, style = "bold"},
-		htmlH4 = {fg = c.blue, style = "bold"},
-		htmlH5 = {fg = c.blue, style = "bold"},
+		htmlH1 = {fg = c.light_blue, style = "bold"},
+		htmlH2 = {fg = c.light_blue, style = "bold"},
+		htmlH3 = {fg = c.light_blue, style = "bold"},
+		htmlH4 = {fg = c.light_blue, style = "bold"},
+		htmlH5 = {fg = c.light_blue, style = "bold"},
 
 		-- Markdown
 		markdownH1 = {fg = c.blue, style = "bold"},
