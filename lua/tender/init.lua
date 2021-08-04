@@ -228,15 +228,15 @@ local function set_groups()
     -- diff
     diffAdded = {fg = c.diff_green},
     diffRemoved = {fg = c.diff_red},
+    diffChanged = {fg = c.diff_yellow},
     diffFile = {fg = c.blue},
     diffIndexLine = {fg = c.blue},
-    diffNewFile = {fg = c.blue},
     diffIndexFile = {fg = c.white},
     diffOldFile = {fg = c.red},
-    diffSubname = {fg = c.white},
+    diffNewFile = {fg = c.diff_green},
     diffLine = {fg = c.violet},
+    diffSubname = {fg = c.orange},
     diffFileId = {fg = c.blue},
-    diffChanged = {fg = c.diff_yellow},
 
     -- git
     gitcommitSummary = {fg = c.fg},
