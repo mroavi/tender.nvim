@@ -259,6 +259,7 @@ local function set_groups()
     TelescopePromptBorder = {fg = c.white},
     TelescopeResultsBorder = {fg = c.white},
     TelescopePreviewBorder = {fg = c.white},
+    TelescopeResultsDiffUntracked = {fg = c.purple},
 
     -- LSP
     LspDiagnosticsDefaultHint = {fg = c.light_pink, style = "italic"},
