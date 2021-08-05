@@ -53,7 +53,7 @@ local function set_groups()
     DiffChange = {fg = c.diff_yellow, bg = c.none}, --  diff mode: Changed line
     DiffDelete = {fg = c.diff_red, bg = c.none}, -- diff mode: Deleted line
     DiffText = {fg = c.fg, bg = c.none, style = "reverse"}, -- diff mode: Changed text within a changed line
-    SignColumn = {fg = c.fg, bg = c.bg0},
+    SignColumn = {fg = c.fg},
     Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
     SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
     SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
