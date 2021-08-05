@@ -30,7 +30,8 @@ local function set_groups()
     -- Editor
     SpecialKey = {fg = c.light_blue},
     EndOfBuffer = {fg = c.bg4}, -- ~ lines at the end of a buffer
-    NonText = {fg = c.bg4},
+    -- NonText = {fg = c.bg4},
+    NonText = {fg = c.none}, -- makes editor transparent
     Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
     ErrorMsg = {fg = c.red},
     IncSearch = {fg = c.bg0, bg = c.blue},
@@ -73,7 +74,8 @@ local function set_groups()
     NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
     FloatBorder = {fg = c.blue, bg = c.bg2},
     Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
-    Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
+    -- Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
+    Normal = {fg = c.none, bg = c.none}, -- makes editor transparent
 
     CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
     MatchParen = {fg = c.blue, style = "underline"},
