@@ -42,7 +42,7 @@ local function set_groups()
     CursorLineNr = {fg = c.bg5},
     Question = {fg = c.green, style = cfg.bold},
     StatusLine = {fg = c.white, bg = c.bg3},
-    StatusLineNC = {fg = c.gray, bg = c.bg1},
+    StatusLineNC = {fg = c.gray, bg = c.bg3},
     VertSplit = {fg = c.gray},
     Title = {fg = c.blue, bg = c.none, style = cfg.bold},
     Visual = {bg = c.bg3},
