@@ -5,11 +5,11 @@ local tender = {}
 
 local function set_terminal_colors()
   vim.g.terminal_color_0 = c.bg2
-  vim.g.terminal_color_1 = c.cyan
+  vim.g.terminal_color_1 = c.red
   vim.g.terminal_color_2 = c.green
   vim.g.terminal_color_3 = c.blue
   vim.g.terminal_color_4 = c.light_blue
-  vim.g.terminal_color_5 = c.purple
+  vim.g.terminal_color_5 = c.yellow
   vim.g.terminal_color_6 = c.blue
   vim.g.terminal_color_7 = c.blue
   vim.g.terminal_color_8 = c.yellow
@@ -264,13 +264,13 @@ local function set_groups()
     TelescopeResultsDiffUntracked = {fg = c.purple},
 
     -- LSP
-    LspDiagnosticsDefaultHint = {fg = c.light_pink, style = "italic"},
+    LspDiagnosticsDefaultHint = {fg = c.light_pink, style = "reverse"},
     LspDiagnosticsSignHint = {fg = c.light_pink},
-    LspDiagnosticsDefaultError = {fg = c.red, style = "italic"},
+    LspDiagnosticsDefaultError = {fg = c.red, style = "reverse"},
     LspDiagnosticsSignError = {fg = c.red},
-    LspDiagnosticsDefaultWarning = {fg = c.orange, style = "italic"},
+    LspDiagnosticsDefaultWarning = {fg = c.orange, style = "reverse"},
     LspDiagnosticsSignWarning = {fg = c.orange},
-    LspDiagnosticsDefaultInformation = {fg = c.yellow, style = "italic"},
+    LspDiagnosticsDefaultInformation = {fg = c.yellow, style = "reverse"},
     LspDiagnosticsSignInformation = {fg = c.yellow},
 
     -- WhichKey
