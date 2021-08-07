@@ -245,6 +245,7 @@ local function set_groups()
     gitcommitHeader = {fg = c.blue},
     gitcommitType = {fg = c.yellow},
     gitcommitFile = {fg = c.orange},
+    gitcommitOverflow = {fg = c.orange, style = "reverse"},
 
     -- GitSigns
     GitSignsAdd = {fg = c.diff_green},
