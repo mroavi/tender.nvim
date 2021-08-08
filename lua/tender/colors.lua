@@ -34,38 +34,38 @@
 -- white_hint:   '#ffffff'
 
 local colors = {
-	gray        = "#999999",
-	gray_alt    = "#393939",
-	red         = "#f43753",
-	yellow      = "#d3b987",
-	orange      = "#ffc24b",
-	green       = "#c9d05c",
-	cyan        = "#44778d",
-	dark_cyan   = "#335261",
-	blue        = "#73cef4",
-	violet      = "#a9a1e1", -- unmodified
-	purple      = "#C590C0",
-	light_blue  = "#b3deef",
-	light_pink  = "#D8BFD8", -- unmodified
-	disabled    = "#676E95", -- unmodified
-	diff_red    = "#f43753",
-	diff_green  = "#c9d05c",
-	diff_blue   = "#73cef4",
-	diff_yellow = "#ffc24b",
-	none        = "NONE"
+  gray        = "#999999",
+  gray_alt    = "#393939",
+  red         = "#f43753",
+  yellow      = "#d3b987",
+  orange      = "#ffc24b",
+  green       = "#c9d05c",
+  cyan        = "#44778d",
+  dark_cyan   = "#335261",
+  blue        = "#73cef4",
+  violet      = "#a9a1e1", -- unmodified
+  purple      = "#C590C0",
+  light_blue  = "#b3deef",
+  light_pink  = "#D8BFD8", -- unmodified
+  disabled    = "#676E95", -- unmodified
+  diff_red    = "#f43753",
+  diff_green  = "#c9d05c",
+  diff_blue   = "#73cef4",
+  diff_yellow = "#ffc24b",
+  none        = "NONE"
 }
 
 function colors.generate()
-	if vim.g.tender_style == "default" or vim.g.tender_style == "" then
-		colors.fg  = "#eeeeee"
-		colors.bg0 = "#282828"
-		colors.bg1 = "#303030"
-		colors.bg2 = "#393939"
-		colors.bg3 = "#444444"
-		colors.bg4 = "#666666"
-		colors.bg5 = "#999999"
-		colors.bg6 = "#bbbbbb"
-	end
+  if vim.g.tender_style == "default" or vim.g.tender_style == "" then
+    colors.fg  = "#eeeeee"
+    colors.bg0 = "#282828"
+    colors.bg1 = "#303030"
+    colors.bg2 = "#393939"
+    colors.bg3 = "#444444"
+    colors.bg4 = "#666666"
+    colors.bg5 = "#999999"
+    colors.bg6 = "#bbbbbb"
+  end
 end
 
 return colors
