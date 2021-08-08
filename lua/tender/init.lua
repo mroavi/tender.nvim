@@ -30,8 +30,7 @@ local function set_groups()
     -- Editor
     SpecialKey = {fg = c.light_blue},
     EndOfBuffer = {fg = c.bg4}, -- ~ lines at the end of a buffer
-    -- NonText = {fg = c.bg4},
-    NonText = {fg = c.none}, -- makes editor transparent
+    NonText = {fg = c.bg4},
     Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
     ErrorMsg = {fg = c.red},
     IncSearch = {fg = c.bg0, bg = c.blue},
