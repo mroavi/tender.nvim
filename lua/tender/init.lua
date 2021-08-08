@@ -301,6 +301,10 @@ local function set_groups()
 
   }
 
+  if vim.env.SSH_CONNECTION then
+    groups.StatusLine = {style = "reverse"}
+  end
+
   local overrides = vim.g.tender_overrides
   if overrides then
     vim.tbl_extend("force", groups, overrides)
