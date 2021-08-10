@@ -233,10 +233,10 @@ local function set_groups()
     diffFile = {fg = c.blue},
     diffIndexLine = {fg = c.blue},
     diffIndexFile = {fg = c.white},
-    diffOldFile = {fg = c.red},
-    diffNewFile = {fg = c.diff_green},
+    diffOldFile = {fg = c.orange},
+    diffNewFile = {fg = c.orange},
     diffLine = {fg = c.violet},
-    diffSubname = {fg = c.orange},
+    diffSubname = {fg = c.violet},
     diffFileId = {fg = c.blue},
 
     -- git
