@@ -77,7 +77,7 @@ local function set_groups()
     Normal = {fg = c.none, bg = c.none}, -- makes editor transparent
 
     CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
-    MatchParen = {fg = c.blue, style = "underline"},
+    MatchParen = {fg = c.blue, style = "reverse"},
     qfLineNr = {fg = c.blue, bg = c.bg1},
     StatusLineTerm = {fg = c.fg, bg = c.bg3},
     StatusLineTermNC = {fg = c.fg, bg = c.bg3},
