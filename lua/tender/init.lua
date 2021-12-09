@@ -72,7 +72,7 @@ local function set_groups()
     QuickFixLine = {bg = c.bg2},
     NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
     FloatBorder = {fg = c.blue, bg = c.bg2},
-    Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
+    Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- currently controlled by Alacritty
     -- Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
     Normal = {fg = c.none, bg = c.none}, -- makes editor transparent
 
