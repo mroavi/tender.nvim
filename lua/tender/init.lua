@@ -300,7 +300,7 @@ local function set_groups()
     CompeDocumentationBorder = {fg = c.white, bg = c.bg0},
 
     -- cmp
-    CmpItemAbbrDeprecated = {fg = c.gray, bg = c.none},
+    CmpItemAbbrDeprecated = {fg = c.gray, bg = c.none, style = "strikethrough"},
     CmpItemAbbrMatch = {fg = c.blue, bg = c.none},
     CmpItemAbbrMatchFuzzy = {fg = c.blue, bg = c.none},
     CmpItemKindVariable = {fg = c.light_pink, bg = c.none},
