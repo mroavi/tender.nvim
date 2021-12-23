@@ -59,7 +59,7 @@ local function set_groups()
     SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
     SpellRare = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
     SpellLocal = {fg = c.orange, bg = c.none, style = "italic,undercurl"},
-    Pmenu = {fg = c.fg, bg = c.bg3},
+    Pmenu = {fg = c.fg, bg = c.bg2},
     PmenuSel = {fg = c.bg0, bg = c.blue},
     PmenuSbar = {fg = c.fg, bg = c.bg2},
     PmenuThumb = {fg = c.fg, bg = c.gray},
@@ -298,6 +298,19 @@ local function set_groups()
     -- compe
     CompeDocumentation = {bg = c.bg0},
     CompeDocumentationBorder = {fg = c.white, bg = c.bg0},
+
+    -- cmp
+    CmpItemAbbrDeprecated = {fg = c.gray, bg = c.none},
+    CmpItemAbbrMatch = {fg = c.blue, bg = c.none},
+    CmpItemAbbrMatchFuzzy = {fg = c.blue, bg = c.none},
+    CmpItemKindVariable = {fg = c.light_pink, bg = c.none},
+    CmpItemKindInterface = {fg = c.light_pink, bg = c.none},
+    CmpItemKindText = {fg = c.light_pink, bg = c.none},
+    CmpItemKindFunction = {fg = c.purple, bg = c.none},
+    CmpItemKindMethod = {fg = c.purple, bg = c.none},
+    CmpItemKindKeyword = {fg = c.violet, bg = c.none},
+    CmpItemKindProperty = {fg = c.violet, bg = c.none},
+    CmpItemKindUnit = {fg = c.violet, bg = c.none},
 
   }
 
