@@ -264,14 +264,14 @@ local function set_groups()
     TelescopeResultsDiffUntracked = {fg = c.purple},
 
     -- LSP
-    LspDiagnosticsDefaultHint = {fg = c.light_pink, style = "reverse"},
-    LspDiagnosticsSignHint = {fg = c.light_pink},
-    LspDiagnosticsDefaultError = {fg = c.red, style = "reverse"},
-    LspDiagnosticsSignError = {fg = c.red},
-    LspDiagnosticsDefaultWarning = {fg = c.orange, style = "reverse"},
-    LspDiagnosticsSignWarning = {fg = c.orange},
-    LspDiagnosticsDefaultInformation = {fg = c.yellow, style = "reverse"},
-    LspDiagnosticsSignInformation = {fg = c.yellow},
+    DiagnosticHint = {fg = c.light_pink, bg = c.bg2},
+    DiagnosticSignHint = {fg = c.light_pink},
+    DiagnosticError = {fg = c.red, bg = c.bg2},
+    DiagnosticSignError = {fg = c.red},
+    DiagnosticWarn = {fg = c.orange, bg = c.bg2},
+    DiagnosticSignWarn = {fg = c.orange},
+    DiagnosticInfo = {fg = c.yellow, bg = c.bg2},
+    DiagnosticSignInfo = {fg = c.yellow},
 
     -- WhichKey
     WhichKey = {fg = c.purple, style = "bold"},
