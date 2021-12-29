@@ -8,7 +8,7 @@ local function set_terminal_colors()
   vim.g.terminal_color_1 = c.red
   vim.g.terminal_color_2 = c.green
   vim.g.terminal_color_3 = c.blue
-  vim.g.terminal_color_4 = c.light_blue
+  vim.g.terminal_color_4 = c.cyan
   vim.g.terminal_color_5 = c.yellow
   vim.g.terminal_color_6 = c.blue
   vim.g.terminal_color_7 = c.blue
@@ -28,7 +28,7 @@ local function set_groups()
   local groups = {
 
     -- Editor
-    SpecialKey = {fg = c.light_blue},
+    SpecialKey = {fg = c.cyan},
     EndOfBuffer = {fg = c.bg4}, -- ~ lines at the end of a buffer
     NonText = {fg = c.bg4},
     Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
@@ -100,7 +100,7 @@ local function set_groups()
     Special = {fg = c.blue, bg = c.none, style = "italic"}, -- any special symbol
     Statement = {fg = c.purple}, -- any statement
     PreProc = {fg = c.orange}, -- generic Preprocessor
-    Underlined = {fg = c.light_blue, bg = c.none, style = "underline"}, -- text that stands out, HTML links
+    Underlined = {fg = c.cyan, bg = c.none, style = "underline"}, -- text that stands out, HTML links
     Ignore = {fg = c.gray_alt}, -- left blank, hidden
     Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- the keywords TODO FIXME and XXX
     Character = {fg = c.green}, -- any character constant: 'c', '\n'
@@ -109,13 +109,13 @@ local function set_groups()
     Function = {fg = c.orange, bg = c.none, style = cfg.italic_function .. cfg.bold},
     Conditional = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
     Repeat = {fg = c.purple, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
-    Label = {fg = c.light_blue}, -- case, default, etc.
+    Label = {fg = c.cyan}, -- case, default, etc.
     Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
     Exception = {fg = c.purple}, -- try, catch, throw
     Include = {fg = c.purple}, -- preprocessor #include
     Define = {fg = c.purple}, -- preprocessor #define
-    Macro = {fg = c.light_blue}, -- same as Define
-    StorageClass = {fg = c.light_blue}, -- static, register, volatile, etc.
+    Macro = {fg = c.cyan}, -- same as Define
+    StorageClass = {fg = c.cyan}, -- static, register, volatile, etc.
     Structure = {fg = c.orange}, -- struct, union, enum, etc.
     Typedef = {fg = c.orange}, -- A typedef
     Tag = {fg = c.blue}, -- you can use CTRL-] on this
@@ -143,11 +143,11 @@ local function set_groups()
     htmlTagN = {fg = c.blue},
     htmlTagName = {fg = c.blue, cfg.bold},
     htmlTitle = {fg = c.fg},
-    htmlH1 = {fg = c.light_blue, style = "bold"},
-    htmlH2 = {fg = c.light_blue, style = "bold"},
-    htmlH3 = {fg = c.light_blue, style = "bold"},
-    htmlH4 = {fg = c.light_blue, style = "bold"},
-    htmlH5 = {fg = c.light_blue, style = "bold"},
+    htmlH1 = {fg = c.cyan, style = "bold"},
+    htmlH2 = {fg = c.cyan, style = "bold"},
+    htmlH3 = {fg = c.cyan, style = "bold"},
+    htmlH4 = {fg = c.cyan, style = "bold"},
+    htmlH5 = {fg = c.cyan, style = "bold"},
 
     -- Markdown
     markdownH1 = {fg = c.blue, style = "bold"},
@@ -174,53 +174,57 @@ local function set_groups()
     markdownCodeBlock = {fg = c.green},
     markdownCodeDelimiter = {fg = c.green},
 
-    -- TreeSitter TODO: update based on my old marlin color scheme
+    -- TreeSitter
     TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
-    TSConditional = {fg = c.light_blue, style = cfg.italic_keyword},
-    TSKeyword = {fg = c.blue, style = cfg.italic_keyword},
-    TSAnnotation = {fg = c.orange},
-    TSRepeat = {fg = c.blue, style = cfg.italic_keyword},
+    TSConditional = {fg = c.purple, style = cfg.italic_keyword},
+    TSKeyword = {fg = c.purple, style = cfg.italic_keyword},
+    TSAnnotation = {fg = c.yellow},
+    TSRepeat = {fg = c.purple, style = cfg.italic_keyword},
     TSAttribute = {fg = c.cyan},
-    TSKeywordFunction = {fg = c.blue, style = cfg.italic_keyword},
-    TSCharacter = {fg = c.orange},
+    TSKeywordFunction = {fg = c.purple, style = cfg.italic_keyword},
+    TSKeywordOperator = {fg = c.purple, style = cfg.italic_keyword},
+    TSCharacter = {fg = c.green},
     TSBoolean = {fg = c.orange, bg = c.none, style = cfg.italic_boolean},
-    TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold},
-    TSMethod = {fg = c.purple, style = cfg.italic_function},
-    TSConstructor = {fg = c.red},
-    TSFuncBuiltin = {fg = c.orange, style = cfg.italic_function},
-    TSConstant = {fg = c.violet},
-    TSVariable = {fg = c.light_pink, style = cfg.italic_variable},
-    TSVariableBuiltin = {fg = c.cyan, style = cfg.italic_variable},
+    TSFunction = {fg = c.cyan, style = cfg.italic_function .. cfg.bold},
+    TSMethod = {fg = c.cyan, style = cfg.italic_function},
+    TSConstructor = {fg = c.cyan},
+    TSFuncBuiltin = {fg = c.cyan, style = cfg.italic_function},
+    TSConstant = {fg = c.blue},
+    TSConstBuiltin = {fg = c.orange},
+    TSVariable = {fg = c.white, style = cfg.italic_variable},
+    TSVariableBuiltin = {fg = c.yellow, style = cfg.italic_variable},
     TSConstMacro = {fg = c.cyan},
     TSError = {fg = c.red},
-    TSException = {fg = c.blue},
-    TSField = {fg = c.red},
-    TSFloat = {fg = c.red},
-    TSFuncMacro = {fg = c.orange},
-    TSInclude = {fg = c.blue},
-    TSLabel = {fg = c.cyan},
-    TSNamespace = {fg = c.cyan},
-    TSNumber = {fg = c.red},
-    TSOperator = {fg = c.blue},
-    TSParameter = {fg = c.violet},
-    TSParameterReference = {fg = c.fg},
-    TSProperty = {fg = c.violet},
-    TSPunctDelimiter = {fg = c.fg},
-    TSPunctBracket = {fg = c.purple},
-    TSPunctSpecial = {fg = c.yellow},
+    TSException = {fg = c.purple},
+    TSField = {fg = c.white},
+    TSFloat = {fg = c.green},
+    TSFuncMacro = {fg = c.cyan},
+    TSInclude = {fg = c.purple},
+    TSLabel = {fg = c.blue},
+    TSNamespace = {fg = c.white},
+    TSNumber = {fg = c.orange},
+    TSOperator = {fg = c.white},
+    TSParameter = {fg = c.white},
+    TSParameterReference = {fg = c.white},
+    TSProperty = {fg = c.white},
+    TSPunctDelimiter = {fg = c.white},
+    TSPunctBracket = {fg = c.white},
+    TSPunctSpecial = {fg = c.white},
     TSString = {fg = c.green},
-    TSStringRegex = {fg = c.blue},
-    TSStringEscape = {fg = c.orange},
+    TSStringRegex = {fg = c.green},
+    TSStringEscape = {fg = c.cyan},
     TSSymbol = {fg = c.orange},
-    TSType = {fg = c.orange},
-    TSTypeBuiltin = {fg = c.cyan},
-    TSTag = {fg = c.blue},
-    TSTagDelimiter = {fg = c.blue},
-    TSText = {fg = c.violet},
+    TSType = {fg = c.blue},
+    TSTypeBuiltin = {fg = c.yellow},
+    TSStructure = {fg = c.yellow},
+    TSTag = {fg = c.red},
+    TSTagDelimiter = {fg = c.bg3},
+    TSText = {fg = c.white},
     TSTextReference = {fg = c.orange},
-    TSEmphasis = {fg = c.violet},
+    TSStrong = {fg = c.fg, bg = c.none, style = "bold"},
+    TSEmphasis = {fg = c.violet, style = "italic"},
     TSUnderline = {fg = c.fg, bg = c.none, style = "underline"},
-    TSStrike = {},
+    TSStrike = {fg = c.fg, bg = c.none, style = "strikethrough"},
     TSTitle = {fg = c.fg, bg = c.none, style = "bold"},
     TSLiteral = {fg = c.fg},
     TSURI = {fg = c.purple},
@@ -282,7 +286,7 @@ local function set_groups()
     WhichKeyFloat = {bg = c.bg1},
 
     -- Julia
-    juliaFunctionCall = {fg = c.light_blue},
+    juliaFunctionCall = {fg = c.cyan},
     -- juliaCommentL = {gray},
     -- juliaCommentDelim = {gray},
 
