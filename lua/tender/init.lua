@@ -181,7 +181,7 @@ local function set_groups()
     TSAnnotation = {fg = c.yellow},
     TSRepeat = {fg = c.purple, style = cfg.italic_keyword},
     TSAttribute = {fg = c.cyan},
-    TSKeywordFunction = {fg = c.purple, style = cfg.italic_keyword},
+    TSKeywordFunction = {fg = c.orange, style = cfg.italic_keyword},
     TSKeywordOperator = {fg = c.purple, style = cfg.italic_keyword},
     TSCharacter = {fg = c.green},
     TSBoolean = {fg = c.orange, bg = c.none, style = cfg.italic_boolean},
