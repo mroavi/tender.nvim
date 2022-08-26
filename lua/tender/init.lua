@@ -96,7 +96,7 @@ local function set_groups()
 
     -- Common
     Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
-    Constant = {fg = c.orange},
+    Constant = {fg = c.yellow},
     Special = {fg = c.blue, bg = c.none, style = "italic"}, -- any special symbol
     Statement = {fg = c.purple}, -- any statement
     PreProc = {fg = c.orange}, -- generic Preprocessor
@@ -104,7 +104,7 @@ local function set_groups()
     Ignore = {fg = c.gray_alt}, -- left blank, hidden
     Todo = {fg = c.orange, bg = c.none, style = "bold,italic"}, -- the keywords TODO FIXME and XXX
     Character = {fg = c.green}, -- any character constant: 'c', '\n'
-    Boolean = {fg = c.blue_alt, bg = c.none, style = cfg.italic_boolean}, -- true , false
+    Boolean = {fg = c.yellow, bg = c.none, style = cfg.italic_boolean}, -- true , false
     Float = {fg = c.yellow}, -- a floating point constant: 2.3e10
     Function = {fg = c.orange, bg = c.none, style = cfg.italic_function .. cfg.bold},
     Conditional = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
