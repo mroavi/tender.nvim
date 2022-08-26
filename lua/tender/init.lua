@@ -128,7 +128,7 @@ local function set_groups()
     Number = {fg = c.yellow}, -- a number constant: 5
     Operator = {fg = c.white}, -- sizeof", "+", "*", etc.
     PreCondit = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
-    Delimiter = {fg = c.yellow}, -- character that needs attention like , or .
+    Delimiter = {fg = c.yellow}, -- characters that needs attention(like `,`, `.`, `()` `{}`) 
     Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
 
     -- HTML
