@@ -126,7 +126,7 @@ local function set_groups()
     Identifier = {fg = c.blue, bg = c.none, style = cfg.italic_variable}, -- any variable name
     String = {fg = c.green, bg = c.none}, -- Any string
     Number = {fg = c.yellow}, -- a number constant: 5
-    Operator = {fg = c.purple}, -- sizeof", "+", "*", etc.
+    Operator = {fg = c.white}, -- sizeof", "+", "*", etc.
     PreCondit = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
     Delimiter = {fg = c.yellow}, -- character that needs attention like , or .
     Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
