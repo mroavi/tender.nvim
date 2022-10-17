@@ -34,6 +34,7 @@
 -- white_hint:   '#ffffff'
 
 local colors = {
+
   gray        = "#999999",
   gray_alt    = "#393939",
   red         = "#f43753",
@@ -51,20 +52,17 @@ local colors = {
   diff_green  = "#c9d05c",
   diff_blue   = "#73cef4",
   diff_yellow = "#ffc24b",
-  none        = "NONE"
-}
+  none        = "NONE",
 
-function colors.generate()
-  if vim.g.tender_style == "default" or vim.g.tender_style == "" then
-    colors.fg  = "#eeeeee"
-    colors.bg0 = "#282828"
-    colors.bg1 = "#303030"
-    colors.bg2 = "#393939"
-    colors.bg3 = "#444444"
-    colors.bg4 = "#666666"
-    colors.bg5 = "#999999"
-    colors.bg6 = "#bbbbbb"
-  end
-end
+  fg  = "#eeeeee",
+  bg0 = "#282828",
+  bg1 = "#303030",
+  bg2 = "#393939",
+  bg3 = "#444444",
+  bg4 = "#666666",
+  bg5 = "#999999",
+  bg6 = "#bbbbbb",
+
+}
 
 return colors
