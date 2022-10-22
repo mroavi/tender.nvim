@@ -203,7 +203,7 @@ local function set_groups()
 
     ['@storageclass'] = {link = 'StorageClass'},
     ['@attribute']    = {link = 'PreProc'},
-    ['@field']        = {link = 'Identifier'},
+    ['@field']        = {link = 'Normal'},
     ['@property']     = {link = 'Function'},
     -- }}}
 
