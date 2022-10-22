@@ -7,10 +7,10 @@ local function set_terminal_colors()
   vim.g.terminal_color_2 = c.green
   vim.g.terminal_color_3 = c.blue
   vim.g.terminal_color_4 = c.cyan
-  vim.g.terminal_color_5 = c.yellow
+  vim.g.terminal_color_5 = c.orange
   vim.g.terminal_color_6 = c.blue
   vim.g.terminal_color_7 = c.blue
-  vim.g.terminal_color_8 = c.yellow
+  vim.g.terminal_color_8 = c.orange
   vim.g.terminal_color_9 = c.red
   vim.g.terminal_color_10 = c.green
   vim.g.terminal_color_11 = c.cyan
@@ -36,7 +36,7 @@ local function set_groups()
     ['Directory']        = {fg = c.blue, bg = c.none, bold = true}, -- directory names (and other special names in listings)
     ['ErrorMsg']         = {fg = c.red},
     ['IncSearch']        = {fg = c.bg0, bg = c.blue},
-    ['Search']           = {fg = c.bg0, bg = c.yellow},
+    ['Search']           = {fg = c.bg0, bg = c.orange},
     ['MoreMsg']          = {fg = c.green, bold = true},
     ['ModeMsg']          = {fg = c.white, bold = true},
     ['LineNr']           = {fg = c.bg4},
@@ -47,7 +47,7 @@ local function set_groups()
     ['VertSplit']        = {fg = c.gray},
     ['Title']            = {fg = c.blue, bg = c.none, bold = true},
     ['Visual']           = {bg = c.bg3},
-    ['WarningMsg']       = {fg = c.orange, bold = true},
+    ['WarningMsg']       = {fg = c.yellow, bold = true},
     ['WildMenu']         = {fg = c.bg0, bg = c.blue, bold = true},
     ['Folded']           = {fg = c.gray, bg = c.none, italic = true},
     ['FoldColumn']       = {fg = c.blue},
@@ -59,8 +59,8 @@ local function set_groups()
     ['Conceal']          = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
     ['SpellBad']         = {fg = c.red, bg = c.none, italic = true, undercurl = true},
     ['SpellCap']         = {fg = c.blue, bg = c.none, italic = true, undercurl = true},
-    ['SpellRare']        = {fg = c.orange, bg = c.none, italic = true, undercurl = true},
-    ['SpellLocal']       = {fg = c.orange, bg = c.none, italic = true, undercurl = true},
+    ['SpellRare']        = {fg = c.yellow, bg = c.none, italic = true, undercurl = true},
+    ['SpellLocal']       = {fg = c.yellow, bg = c.none, italic = true, undercurl = true},
     ['Pmenu']            = {fg = c.fg, bg = c.bg2},
     ['PmenuSel']         = {fg = c.bg0, bg = c.blue},
     ['PmenuSbar']        = {fg = c.fg, bg = c.bg2},
@@ -90,26 +90,26 @@ local function set_groups()
     ['ReplacelMode']     = {fg = c.red, bg = c.none, reverse = true},
     ['VisualMode']       = {fg = c.cyan, bg = c.none, reverse = true},
     ['CommandMode']      = {fg = c.gray, bg = c.none, reverse = true},
-    ['Warnings']         = {fg = c.orange},
+    ['Warnings']         = {fg = c.yellow},
     ['healthError']      = {fg = c.red},
     ['healthSuccess']    = {fg = c.green},
-    ['healthWarning']    = {fg = c.orange},
+    ['healthWarning']    = {fg = c.yellow},
 
     --------------------------------------------------------------------------------
     -- Common
     --------------------------------------------------------------------------------
 
     ['Comment']        = {fg = c.gray, bg = c.none, italic = true},
-    ['Constant']       = {fg = c.orange},
+    ['Constant']       = {fg = c.yellow},
     ['Special']        = {fg = c.cyan, bg = c.none}, -- any special symbol
     ['Statement']      = {fg = c.purple}, -- any statement
-    ['PreProc']        = {fg = c.orange}, -- generic Preprocessor
+    ['PreProc']        = {fg = c.yellow}, -- generic Preprocessor
     ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
     ['Ignore']         = {fg = c.gray_alt}, -- left blank, hidden
-    ['Todo']           = {fg = c.orange, bg = c.none, bold = true, italic = true}, -- the keywords TODO FIXME and XXX
+    ['Todo']           = {fg = c.yellow, bg = c.none, bold = true, italic = true}, -- the keywords TODO FIXME and XXX
     ['Character']      = {fg = c.green}, -- any character constant: 'c', '\n'
-    ['Boolean']        = {fg = c.yellow, bg = c.none, italic = true}, -- true , false
-    ['Float']          = {fg = c.yellow}, -- a floating point constant: 2.3e10
+    ['Boolean']        = {fg = c.orange, bg = c.none, italic = true}, -- true , false
+    ['Float']          = {fg = c.orange}, -- a floating point constant: 2.3e10
     ['Function']       = {fg = c.green, bg = c.none},
     ['Conditional']    = {fg = c.green, bg = c.none},
     ['Repeat']         = {fg = c.green, bg = c.none}, -- italic any other keyword
@@ -120,16 +120,16 @@ local function set_groups()
     ['Define']         = {fg = c.purple}, -- preprocessor #define
     ['Macro']          = {fg = c.cyan}, -- same as Define
     ['StorageClass']   = {fg = c.cyan}, -- static, register, volatile, etc.
-    ['Structure']      = {fg = c.orange}, -- struct, union, enum, etc.
-    ['Typedef']        = {fg = c.orange}, -- A typedef
+    ['Structure']      = {fg = c.yellow}, -- struct, union, enum, etc.
+    ['Typedef']        = {fg = c.yellow}, -- A typedef
     ['Tag']            = {fg = c.blue}, -- you can use CTRL-] on this
     ['SpecialComment'] = {fg = c.violet}, -- special things inside a comment
     ['Debug']          = {fg = c.red}, -- debugging statements
-    ['SpecialChar']    = {fg = c.orange}, -- special character in a constant
+    ['SpecialChar']    = {fg = c.yellow}, -- special character in a constant
     ['Type']           = {fg = c.blue}, -- int, long, char, etc.
     ['Identifier']     = {fg = c.cyan, bg = c.none}, -- any variable name
-    ['String']         = {fg = c.yellow, bg = c.none}, -- Any string
-    ['Number']         = {fg = c.yellow}, -- a number constant: 5
+    ['String']         = {fg = c.orange, bg = c.none}, -- Any string
+    ['Number']         = {fg = c.orange}, -- a number constant: 5
     ['Operator']       = {fg = c.red}, -- sizeof", "+", "*", etc.
     ['PreCondit']      = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
     ['Delimiter']      = {fg = c.cyan}, -- characters that needs attention(like `,`, `.`, `()` `{}`)
@@ -249,12 +249,12 @@ local function set_groups()
     -- HTML
     --------------------------------------------------------------------------------
 
-    ['htmlArg']            = {fg = c.orange},
-    ['htmlBold']           = {fg = c.orange, bg = c.none, bold = true},
+    ['htmlArg']            = {fg = c.yellow},
+    ['htmlBold']           = {fg = c.yellow, bg = c.none, bold = true},
     ['htmlEndTag']         = {fg = c.fg},
     ['htmlstyle']          = {fg = c.cyan, bg = c.none, italic = true},
     ['htmlLink']           = {fg = c.cyan, underline = true},
-    ['htmlSpecialChar']    = {fg = c.orange},
+    ['htmlSpecialChar']    = {fg = c.yellow},
     ['htmlSpecialTagName'] = {fg = c.blue, bold = true},
     ['htmlTag']            = {fg = c.fg},
     ['htmlTagN']           = {fg = c.blue},
@@ -289,7 +289,7 @@ local function set_groups()
     ['markdownRule']              = {fg = c.gray},
     ['markdownUrl']               = {fg = c.cyan, bg = c.none, underline = true},
     ['markdownBlockquote']        = {fg = c.gray},
-    ['markdownBold']              = {fg = c.orange, bg = c.none, bold = true},
+    ['markdownBold']              = {fg = c.yellow, bg = c.none, bold = true},
     ['markdownCode']              = {fg = c.purple, bg = c.bg1},
     ['markdownCodeBlock']         = {fg = c.green},
     ['markdownCodeDelimiter']     = {fg = c.green},
@@ -304,8 +304,8 @@ local function set_groups()
     ['diffFile']      = {fg = c.blue},
     ['diffIndexLine'] = {fg = c.blue},
     ['diffIndexFile'] = {fg = c.white},
-    ['diffOldFile']   = {fg = c.orange},
-    ['diffNewFile']   = {fg = c.orange},
+    ['diffOldFile']   = {fg = c.yellow},
+    ['diffNewFile']   = {fg = c.yellow},
     ['diffLine']      = {fg = c.violet},
     ['diffSubname']   = {fg = c.violet},
     ['diffFileId']    = {fg = c.blue},
@@ -316,9 +316,9 @@ local function set_groups()
 
     ['gitcommitSummary']  = {fg = c.fg},
     ['gitcommitHeader']   = {fg = c.blue},
-    ['gitcommitType']     = {fg = c.yellow},
-    ['gitcommitFile']     = {fg = c.orange},
-    ['gitcommitOverflow'] = {fg = c.orange, reverse = true},
+    ['gitcommitType']     = {fg = c.orange},
+    ['gitcommitFile']     = {fg = c.yellow},
+    ['gitcommitOverflow'] = {fg = c.yellow, reverse = true},
 
     --------------------------------------------------------------------------------
     -- GitSigns
@@ -351,10 +351,10 @@ local function set_groups()
     ['DiagnosticSignHint']  = {fg = c.light_pink},
     ['DiagnosticError']     = {fg = c.red, bg = c.bg2},
     ['DiagnosticSignError'] = {fg = c.red},
-    ['DiagnosticWarn']      = {fg = c.orange, bg = c.bg2},
-    ['DiagnosticSignWarn']  = {fg = c.orange},
-    ['DiagnosticInfo']      = {fg = c.yellow, bg = c.bg2},
-    ['DiagnosticSignInfo']  = {fg = c.yellow},
+    ['DiagnosticWarn']      = {fg = c.yellow, bg = c.bg2},
+    ['DiagnosticSignWarn']  = {fg = c.yellow},
+    ['DiagnosticInfo']      = {fg = c.orange, bg = c.bg2},
+    ['DiagnosticSignInfo']  = {fg = c.orange},
 
     --------------------------------------------------------------------------------
     -- WhichKey
@@ -383,9 +383,9 @@ local function set_groups()
     ['BufTabLineActive']          = {fg = c.bg4, bg = c.bg1},
     ['BufTabLineHidden']          = {fg = c.bg4, bg = c.bg1},
     ['BufTabLineFill']            = {fg = c.bg1, bg = c.bg1},
-    ['BufTabLineModifiedCurrent'] = {fg = c.yellow},
-    ['BufTabLineModifiedActive']  = {fg = c.yellow},
-    ['BufTabLineModifiedHidden']  = {fg = c.yellow},
+    ['BufTabLineModifiedCurrent'] = {fg = c.orange},
+    ['BufTabLineModifiedActive']  = {fg = c.orange},
+    ['BufTabLineModifiedHidden']  = {fg = c.orange},
 
     --------------------------------------------------------------------------------
     -- compe
