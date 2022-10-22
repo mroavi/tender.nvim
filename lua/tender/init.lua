@@ -100,8 +100,8 @@ local function set_groups()
     --------------------------------------------------------------------------------
 
     ['Comment']        = {fg = c.gray, bg = c.none, italic = true},
-    ['Constant']       = {fg = c.yellow},
-    ['Special']        = {fg = c.yellow, bg = c.none}, -- any special symbol
+    ['Constant']       = {fg = c.orange},
+    ['Special']        = {fg = c.cyan, bg = c.none}, -- any special symbol
     ['Statement']      = {fg = c.purple}, -- any statement
     ['PreProc']        = {fg = c.orange}, -- generic Preprocessor
     ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
@@ -110,11 +110,11 @@ local function set_groups()
     ['Character']      = {fg = c.green}, -- any character constant: 'c', '\n'
     ['Boolean']        = {fg = c.yellow, bg = c.none, italic = true}, -- true , false
     ['Float']          = {fg = c.yellow}, -- a floating point constant: 2.3e10
-    ['Function']       = {fg = c.orange, bg = c.none},
-    ['Conditional']    = {fg = c.purple, bg = c.none},
-    ['Repeat']         = {fg = c.purple, bg = c.none}, -- italic any other keyword
+    ['Function']       = {fg = c.green, bg = c.none},
+    ['Conditional']    = {fg = c.green, bg = c.none},
+    ['Repeat']         = {fg = c.green, bg = c.none}, -- italic any other keyword
     ['Label']          = {fg = c.cyan}, -- case, default, etc.
-    ['Keyword']        = {fg = c.blue, bg = c.none}, -- italic for, do, while, etc.
+    ['Keyword']        = {fg = c.cyan, bg = c.none}, -- italic for, do, while, etc.
     ['Exception']      = {fg = c.purple}, -- try, catch, throw
     ['Include']        = {fg = c.purple}, -- preprocessor #include
     ['Define']         = {fg = c.purple}, -- preprocessor #define
@@ -127,12 +127,12 @@ local function set_groups()
     ['Debug']          = {fg = c.red}, -- debugging statements
     ['SpecialChar']    = {fg = c.orange}, -- special character in a constant
     ['Type']           = {fg = c.blue}, -- int, long, char, etc.
-    ['Identifier']     = {fg = c.blue, bg = c.none}, -- any variable name
-    ['String']         = {fg = c.green, bg = c.none}, -- Any string
+    ['Identifier']     = {fg = c.cyan, bg = c.none}, -- any variable name
+    ['String']         = {fg = c.yellow, bg = c.none}, -- Any string
     ['Number']         = {fg = c.yellow}, -- a number constant: 5
-    ['Operator']       = {fg = c.white}, -- sizeof", "+", "*", etc.
+    ['Operator']       = {fg = c.red}, -- sizeof", "+", "*", etc.
     ['PreCondit']      = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
-    ['Delimiter']      = {fg = c.yellow}, -- characters that needs attention(like `,`, `.`, `()` `{}`)
+    ['Delimiter']      = {fg = c.cyan}, -- characters that needs attention(like `,`, `.`, `()` `{}`)
     ['Error']          = {fg = c.red, bg = c.none, bold = true, underline = true}, -- any erroneous construct
 
     --------------------------------------------------------------------------------
