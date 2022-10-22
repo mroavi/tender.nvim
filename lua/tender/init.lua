@@ -101,7 +101,7 @@ local function set_groups()
 
     ['Comment']        = {fg = c.gray, bg = c.none, italic = true},
     ['Constant']       = {fg = c.yellow},
-    ['Special']        = {fg = c.yellow, bg = c.none, italic = true}, -- any special symbol
+    ['Special']        = {fg = c.yellow, bg = c.none}, -- any special symbol
     ['Statement']      = {fg = c.purple}, -- any statement
     ['PreProc']        = {fg = c.orange}, -- generic Preprocessor
     ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
