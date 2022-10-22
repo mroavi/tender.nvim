@@ -96,6 +96,46 @@ local function set_groups()
     ['healthWarning']    = {fg = c.orange},
 
     --------------------------------------------------------------------------------
+    -- Common
+    --------------------------------------------------------------------------------
+
+    ['Comment']        = {fg = c.gray, bg = c.none, italic = true},
+    ['Constant']       = {fg = c.yellow},
+    ['Special']        = {fg = c.yellow, bg = c.none, italic = true}, -- any special symbol
+    ['Statement']      = {fg = c.purple}, -- any statement
+    ['PreProc']        = {fg = c.orange}, -- generic Preprocessor
+    ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
+    ['Ignore']         = {fg = c.gray_alt}, -- left blank, hidden
+    ['Todo']           = {fg = c.orange, bg = c.none, bold = true, italic = true}, -- the keywords TODO FIXME and XXX
+    ['Character']      = {fg = c.green}, -- any character constant: 'c', '\n'
+    ['Boolean']        = {fg = c.yellow, bg = c.none, italic = true}, -- true , false
+    ['Float']          = {fg = c.yellow}, -- a floating point constant: 2.3e10
+    ['Function']       = {fg = c.orange, bg = c.none},
+    ['Conditional']    = {fg = c.purple, bg = c.none},
+    ['Repeat']         = {fg = c.purple, bg = c.none}, -- italic any other keyword
+    ['Label']          = {fg = c.cyan}, -- case, default, etc.
+    ['Keyword']        = {fg = c.blue, bg = c.none}, -- italic for, do, while, etc.
+    ['Exception']      = {fg = c.purple}, -- try, catch, throw
+    ['Include']        = {fg = c.purple}, -- preprocessor #include
+    ['Define']         = {fg = c.purple}, -- preprocessor #define
+    ['Macro']          = {fg = c.cyan}, -- same as Define
+    ['StorageClass']   = {fg = c.cyan}, -- static, register, volatile, etc.
+    ['Structure']      = {fg = c.orange}, -- struct, union, enum, etc.
+    ['Typedef']        = {fg = c.orange}, -- A typedef
+    ['Tag']            = {fg = c.blue}, -- you can use CTRL-] on this
+    ['SpecialComment'] = {fg = c.violet}, -- special things inside a comment
+    ['Debug']          = {fg = c.red}, -- debugging statements
+    ['SpecialChar']    = {fg = c.orange}, -- special character in a constant
+    ['Type']           = {fg = c.blue}, -- int, long, char, etc.
+    ['Identifier']     = {fg = c.blue, bg = c.none}, -- any variable name
+    ['String']         = {fg = c.green, bg = c.none}, -- Any string
+    ['Number']         = {fg = c.yellow}, -- a number constant: 5
+    ['Operator']       = {fg = c.white}, -- sizeof", "+", "*", etc.
+    ['PreCondit']      = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
+    ['Delimiter']      = {fg = c.yellow}, -- characters that needs attention(like `,`, `.`, `()` `{}`)
+    ['Error']          = {fg = c.red, bg = c.none, bold = true, underline = true}, -- any erroneous construct
+
+    --------------------------------------------------------------------------------
     -- TreeSitter
     --------------------------------------------------------------------------------
 
@@ -204,46 +244,6 @@ local function set_groups()
     ['@tag.attribute'] = {link = 'Identifier'},
     ['@tag.delimiter'] = {link = 'Delimiter'},
     -- }}}
-
-    --------------------------------------------------------------------------------
-    -- Common
-    --------------------------------------------------------------------------------
-
-    ['Comment']        = {fg = c.gray, bg = c.none, italic = true},
-    ['Constant']       = {fg = c.yellow},
-    ['Special']        = {fg = c.yellow, bg = c.none, italic = true}, -- any special symbol
-    ['Statement']      = {fg = c.purple}, -- any statement
-    ['PreProc']        = {fg = c.orange}, -- generic Preprocessor
-    ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
-    ['Ignore']         = {fg = c.gray_alt}, -- left blank, hidden
-    ['Todo']           = {fg = c.orange, bg = c.none, bold = true, italic = true}, -- the keywords TODO FIXME and XXX
-    ['Character']      = {fg = c.green}, -- any character constant: 'c', '\n'
-    ['Boolean']        = {fg = c.yellow, bg = c.none, italic = true}, -- true , false
-    ['Float']          = {fg = c.yellow}, -- a floating point constant: 2.3e10
-    ['Function']       = {fg = c.orange, bg = c.none},
-    ['Conditional']    = {fg = c.purple, bg = c.none},
-    ['Repeat']         = {fg = c.purple, bg = c.none}, -- italic any other keyword
-    ['Label']          = {fg = c.cyan}, -- case, default, etc.
-    ['Keyword']        = {fg = c.blue, bg = c.none}, -- italic for, do, while, etc.
-    ['Exception']      = {fg = c.purple}, -- try, catch, throw
-    ['Include']        = {fg = c.purple}, -- preprocessor #include
-    ['Define']         = {fg = c.purple}, -- preprocessor #define
-    ['Macro']          = {fg = c.cyan}, -- same as Define
-    ['StorageClass']   = {fg = c.cyan}, -- static, register, volatile, etc.
-    ['Structure']      = {fg = c.orange}, -- struct, union, enum, etc.
-    ['Typedef']        = {fg = c.orange}, -- A typedef
-    ['Tag']            = {fg = c.blue}, -- you can use CTRL-] on this
-    ['SpecialComment'] = {fg = c.violet}, -- special things inside a comment
-    ['Debug']          = {fg = c.red}, -- debugging statements
-    ['SpecialChar']    = {fg = c.orange}, -- special character in a constant
-    ['Type']           = {fg = c.blue}, -- int, long, char, etc.
-    ['Identifier']     = {fg = c.blue, bg = c.none}, -- any variable name
-    ['String']         = {fg = c.green, bg = c.none}, -- Any string
-    ['Number']         = {fg = c.yellow}, -- a number constant: 5
-    ['Operator']       = {fg = c.white}, -- sizeof", "+", "*", etc.
-    ['PreCondit']      = {fg = c.blue}, -- preprocessor #if, #else, #endif, etc.
-    ['Delimiter']      = {fg = c.yellow}, -- characters that needs attention(like `,`, `.`, `()` `{}`)
-    ['Error']          = {fg = c.red, bg = c.none, bold = true, underline = true}, -- any erroneous construct
 
     --------------------------------------------------------------------------------
     -- HTML
