@@ -78,7 +78,7 @@ local function set_groups()
     --['Normal']         = {fg = c.fg, bg = c.bg0}, -- normal text and background color
     ['Normal']           = {fg = c.none, bg = c.none}, -- makes editor transparent
     ['CursorIM']         = {fg = c.cyan, bg = c.none, reverse = true}, -- like Cursor, but used when in IME mode
-    ['MatchParen']       = {fg = c.blue, underline = true},
+    ['MatchParen']       = {fg = c.yellow, underline = true},
     ['qfLineNr']         = {fg = c.blue, bg = c.bg1},
     ['StatusLineTerm']   = {fg = c.fg, bg = c.bg3},
     ['StatusLineTermNC'] = {fg = c.fg, bg = c.bg3},
