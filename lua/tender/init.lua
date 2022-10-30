@@ -371,9 +371,10 @@ local function set_groups()
     -- Julia
     --------------------------------------------------------------------------------
 
+    --['juliaParDelim']     = {fg = c.white}
+    --['juliaSemicolon']    = {fg = c.white}
+    --['juliaComma']        = {fg = c.white}
     ['juliaFunctionCall']   = {fg = c.cyan},
-    --['juliaCommentL']     = {fg = c.gray},
-    --['juliaCommentDelim'] = {fg = c.gray},
 
     --------------------------------------------------------------------------------
     -- BufTabLine
