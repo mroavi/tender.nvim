@@ -37,6 +37,7 @@ local function set_groups()
     ['ErrorMsg']         = {fg = c.red},
     ['IncSearch']        = {fg = c.bg0, bg = c.blue},
     ['Search']           = {fg = c.bg0, bg = c.orange},
+    ['CurSearch']        = {fg = c.bg0, bg = c.blue},
     ['MoreMsg']          = {fg = c.green, bold = true},
     ['ModeMsg']          = {fg = c.white, bold = true},
     ['LineNr']           = {fg = c.bg4},
