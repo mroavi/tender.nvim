@@ -262,10 +262,10 @@ local function set_groups()
     ['htmlTagName']        = {fg = c.blue, bold = true},
     ['htmlTitle']          = {fg = c.fg},
     ['htmlH1']             = {fg = c.cyan, bold = true},
-    ['htmlH2']             = {fg = c.cyan, bold = true},
-    ['htmlH3']             = {fg = c.cyan, bold = true},
-    ['htmlH4']             = {fg = c.cyan, bold = true},
-    ['htmlH5']             = {fg = c.cyan, bold = true},
+    ['htmlH2']             = {fg = c.orange, bold = true},
+    ['htmlH3']             = {fg = c.green, bold = true},
+    ['htmlH4']             = {fg = c.blue, bold = true},
+    ['htmlH5']             = {fg = c.violet, bold = true},
 
     --------------------------------------------------------------------------------
     -- Markdown
