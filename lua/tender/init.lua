@@ -39,11 +39,11 @@ local function set_groups()
     ['Search']           = {fg = c.bg0, bg = c.orange},
     ['CurSearch']        = {fg = c.bg0, bg = c.blue},
     ['MoreMsg']          = {fg = c.green, bold = true},
-    ['ModeMsg']          = {fg = c.white, bold = true},
+    ['ModeMsg']          = {fg = c.fg, bold = true},
     ['LineNr']           = {fg = c.bg4},
     ['CursorLineNr']     = {fg = c.bg5},
     ['Question']         = {fg = c.green, bold = true},
-    ['StatusLine']       = {fg = c.white, bg = c.bg3},
+    ['StatusLine']       = {fg = c.fg, bg = c.bg3},
     ['StatusLineNC']     = {fg = c.gray, bg = c.bg3},
     ['VertSplit']        = {fg = c.gray},
     ['Title']            = {fg = c.blue, bg = c.none, bold = true},
@@ -304,7 +304,7 @@ local function set_groups()
     ['diffChanged']   = {fg = c.diff_yellow},
     ['diffFile']      = {fg = c.blue},
     ['diffIndexLine'] = {fg = c.blue},
-    ['diffIndexFile'] = {fg = c.white},
+    ['diffIndexFile'] = {fg = c.fg},
     ['diffOldFile']   = {fg = c.yellow},
     ['diffNewFile']   = {fg = c.yellow},
     ['diffLine']      = {fg = c.violet},
@@ -339,9 +339,9 @@ local function set_groups()
     -- Telescope
     --------------------------------------------------------------------------------
 
-    ['TelescopePromptBorder']         = {fg = c.white},
-    ['TelescopeResultsBorder']        = {fg = c.white},
-    ['TelescopePreviewBorder']        = {fg = c.white},
+    ['TelescopePromptBorder']         = {fg = c.fg},
+    ['TelescopeResultsBorder']        = {fg = c.fg},
+    ['TelescopePreviewBorder']        = {fg = c.fg},
     ['TelescopeResultsDiffUntracked'] = {fg = c.purple},
 
     --------------------------------------------------------------------------------
@@ -372,9 +372,9 @@ local function set_groups()
     -- Julia
     --------------------------------------------------------------------------------
 
-    --['juliaParDelim']     = {fg = c.white}
-    --['juliaSemicolon']    = {fg = c.white}
-    --['juliaComma']        = {fg = c.white}
+    --['juliaParDelim']     = {fg = c.fg}
+    --['juliaSemicolon']    = {fg = c.fg}
+    --['juliaComma']        = {fg = c.fg}
     ['juliaFunctionCall']   = {fg = c.cyan},
 
     --------------------------------------------------------------------------------
@@ -394,7 +394,7 @@ local function set_groups()
     --------------------------------------------------------------------------------
 
     ['CompeDocumentation']       = {bg = c.bg0},
-    ['CompeDocumentationBorder'] = {fg = c.white, bg = c.bg0},
+    ['CompeDocumentationBorder'] = {fg = c.fg, bg = c.bg0},
 
     --------------------------------------------------------------------------------
     -- cmp
