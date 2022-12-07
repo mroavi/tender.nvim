@@ -18,7 +18,7 @@ local function set_terminal_colors()
   vim.g.terminal_color_13 = c.purple
   vim.g.terminal_color_14 = c.green
   vim.g.terminal_color_15 = c.blue
-  vim.g.terminal_color_background = c.bg0
+  vim.g.terminal_color_background = c.bg
   vim.g.terminal_color_foreground = c.fg
 end
 
@@ -35,9 +35,9 @@ local function set_groups()
     ['NonText']          = {fg = c.bg4},
     ['Directory']        = {fg = c.blue, bg = c.none, bold = true}, -- directory names (and other special names in listings)
     ['ErrorMsg']         = {fg = c.red},
-    ['IncSearch']        = {fg = c.bg0, bg = c.blue},
-    ['Search']           = {fg = c.bg0, bg = c.orange},
-    ['CurSearch']        = {fg = c.bg0, bg = c.blue},
+    ['IncSearch']        = {fg = c.bg, bg = c.blue},
+    ['Search']           = {fg = c.bg, bg = c.orange},
+    ['CurSearch']        = {fg = c.bg, bg = c.blue},
     ['MoreMsg']          = {fg = c.green, bold = true},
     ['ModeMsg']          = {fg = c.fg, bold = true},
     ['LineNr']           = {fg = c.bg4},
@@ -49,7 +49,7 @@ local function set_groups()
     ['Title']            = {fg = c.blue, bg = c.none, bold = true},
     ['Visual']           = {bg = c.bg3},
     ['WarningMsg']       = {fg = c.yellow, bold = true},
-    ['WildMenu']         = {fg = c.bg0, bg = c.blue, bold = true},
+    ['WildMenu']         = {fg = c.bg, bg = c.blue, bold = true},
     ['Folded']           = {fg = c.gray, bg = c.none, italic = true},
     ['FoldColumn']       = {fg = c.blue},
     ['DiffAdd']          = {fg = c.diff_green, bg = c.none}, -- diff mode: Added line
@@ -63,20 +63,20 @@ local function set_groups()
     ['SpellRare']        = {fg = c.yellow, bg = c.none, italic = true, undercurl = true},
     ['SpellLocal']       = {fg = c.yellow, bg = c.none, italic = true, undercurl = true},
     ['Pmenu']            = {fg = c.fg, bg = c.bg2},
-    ['PmenuSel']         = {fg = c.bg0, bg = c.blue},
+    ['PmenuSel']         = {fg = c.bg, bg = c.blue},
     ['PmenuSbar']        = {fg = c.fg, bg = c.bg2},
     ['PmenuThumb']       = {fg = c.fg, bg = c.gray},
     ['Tabline']          = {fg = c.gray},
-    ['TablineSel']       = {fg = c.bg0, bg = c.blue},
+    ['TablineSel']       = {fg = c.bg, bg = c.blue},
     ['TabLineFill']      = {fg = c.fg},
     ['CursorColumn']     = {fg = c.none, bg = c.bg3},
     ['CursorLine']       = {fg = c.none, bg = c.bg3},
     ['ColorColumn']      = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
     ['QuickFixLine']     = {bg = c.bg2},
-    ['NormalFloat']      = {fg = c.fg, bg = c.bg0}, -- normal text and background color for floating windows
+    ['NormalFloat']      = {fg = c.fg, bg = c.bg}, -- normal text and background color for floating windows
     ['FloatBorder']      = {fg = c.blue, bg = c.bg2},
     ['Cursor']           = {fg = c.cyan, bg = c.none, reverse = true}, -- currently controlled by Alacritty
-    --['Normal']         = {fg = c.fg, bg = c.bg0}, -- normal text and background color
+    --['Normal']         = {fg = c.fg, bg = c.bg}, -- normal text and background color
     ['Normal']           = {fg = c.none, bg = c.none}, -- makes editor transparent
     ['CursorIM']         = {fg = c.cyan, bg = c.none, reverse = true}, -- like Cursor, but used when in IME mode
     ['MatchParen']       = {fg = c.yellow, underline = true},
@@ -381,7 +381,7 @@ local function set_groups()
     -- BufTabLine
     --------------------------------------------------------------------------------
 
-    ['BufTabLineCurrent']         = {fg = c.blue, bg = c.bg0},
+    ['BufTabLineCurrent']         = {fg = c.blue, bg = c.bg},
     ['BufTabLineActive']          = {fg = c.bg4, bg = c.bg1},
     ['BufTabLineHidden']          = {fg = c.bg4, bg = c.bg1},
     ['BufTabLineFill']            = {fg = c.bg1, bg = c.bg1},
@@ -393,8 +393,8 @@ local function set_groups()
     -- compe
     --------------------------------------------------------------------------------
 
-    ['CompeDocumentation']       = {bg = c.bg0},
-    ['CompeDocumentationBorder'] = {fg = c.fg, bg = c.bg0},
+    ['CompeDocumentation']       = {bg = c.bg},
+    ['CompeDocumentationBorder'] = {fg = c.fg, bg = c.bg},
 
     --------------------------------------------------------------------------------
     -- cmp
