@@ -418,6 +418,14 @@ local function set_groups()
     ['CmpItemKindProperty']   = {fg = c.violet, bg = c.none},
     ['CmpItemKindUnit']       = {fg = c.violet, bg = c.none},
 
+    --------------------------------------------------------------------------------
+    -- tex
+    --------------------------------------------------------------------------------
+
+    ['texMathZoneTI'] = {fg = c.orange, bg = c.none},
+    ['texMathDelim'] = {fg = c.fg, bg = c.none},
+    ['texMathOper'] = {fg = c.fg, bg = c.none},
+
   }
 
   if vim.env.SSH_CONNECTION then
