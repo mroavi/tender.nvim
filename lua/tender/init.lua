@@ -417,6 +417,7 @@ local function set_groups()
     ['CmpItemKindKeyword']    = {fg = c.violet, bg = c.none},
     ['CmpItemKindProperty']   = {fg = c.violet, bg = c.none},
     ['CmpItemKindUnit']       = {fg = c.violet, bg = c.none},
+    ['CmpItemMenu']           = {fg = c.gray, bg = c.none},
 
     --------------------------------------------------------------------------------
     --- tex
