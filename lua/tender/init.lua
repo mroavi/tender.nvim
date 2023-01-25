@@ -430,7 +430,7 @@ local function set_groups()
   }
 
   if vim.env.SSH_CONNECTION then
-    groups.StatusLine = {reverse = true}
+    groups.StatusLine = {fg = c.white, bg = c.dark_cyan}
   end
 
   local overrides = vim.g.tender_overrides
