@@ -74,7 +74,7 @@ local function set_groups()
     ['CursorLine']       = {fg = c.none, bg = c.bg3},
     ['ColorColumn']      = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
     ['QuickFixLine']     = {bg = c.bg2},
-    ['NormalFloat']      = {fg = c.fg, bg = c.bg}, -- normal text and background color for floating windows
+    ['NormalFloat']      = {fg = c.fg, bg = c.none}, -- normal text and background color for floating windows
     ['FloatBorder']      = {fg = c.blue, bg = c.bg2},
     ['Cursor']           = {fg = c.cyan, bg = c.none, reverse = true}, -- currently controlled by Alacritty
     --['Normal']           = {fg = c.fg, bg = c.bg}, -- normal text and background color
