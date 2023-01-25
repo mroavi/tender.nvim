@@ -79,7 +79,7 @@ local function set_groups()
     --['Normal']           = {fg = c.fg, bg = c.bg}, -- normal text and background color
     ['Normal']           = {fg = c.none, bg = c.none}, -- makes editor transparent
     ['CursorIM']         = {fg = c.cyan, bg = c.none, reverse = true}, -- like Cursor, but used when in IME mode
-    ['MatchParen']       = {fg = c.purple, underline = true},
+    ['MatchParen']       = {fg = c.purple},
     ['qfLineNr']         = {fg = c.blue, bg = c.bg1},
     ['StatusLineTerm']   = {fg = c.fg, bg = c.bg3},
     ['StatusLineTermNC'] = {fg = c.fg, bg = c.bg3},
@@ -108,7 +108,7 @@ local function set_groups()
     ['Underlined']     = {fg = c.cyan, bg = c.none, underline = true}, -- text that stands out, HTML links
     ['Ignore']         = {fg = c.gray_alt}, -- left blank, hidden
     ['Todo']           = {fg = c.yellow, bg = c.none, bold = true, italic = true}, -- the keywords TODO FIXME and XXX
-    ['Character']      = {fg = c.green}, -- any character constant: 'c', '\n'
+    ['Character']      = {fg = c.orange}, -- any character constant: 'c', '\n'
     ['Boolean']        = {fg = c.orange, bg = c.none, italic = true}, -- true , false
     ['Float']          = {fg = c.orange}, -- a floating point constant: 2.3e10
     ['Function']       = {fg = c.green, bg = c.none},
@@ -119,7 +119,7 @@ local function set_groups()
     ['Exception']      = {fg = c.purple}, -- try, catch, throw
     ['Include']        = {fg = c.purple}, -- preprocessor #include
     ['Define']         = {fg = c.purple}, -- preprocessor #define
-    ['Macro']          = {fg = c.cyan}, -- same as Define
+    ['Macro']          = {fg = c.green}, -- same as Define
     ['StorageClass']   = {fg = c.cyan}, -- static, register, volatile, etc.
     ['Structure']      = {fg = c.yellow}, -- struct, union, enum, etc.
     ['Typedef']        = {fg = c.yellow}, -- A typedef
