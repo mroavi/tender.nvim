@@ -32,7 +32,7 @@ local function set_groups()
 
     ['SpecialKey']       = {fg = c.cyan},
     --['EndOfBuffer']      = {fg = c.bg4, bg = c.bg }, -- ~ lines at the end of a buffer
-    ['EndOfBuffer']      = {fg = c.none, bg = c.none}, -- make ~ lines at the end of a buffer transparent
+    ['EndOfBuffer']      = {fg = c.bg4, bg = c.none}, -- make ~ lines at the end of a buffer transparent
     ['NonText']          = {fg = c.bg4},
     ['Directory']        = {fg = c.blue, bg = c.none, bold = true}, -- directory names (and other special names in listings)
     ['ErrorMsg']         = {fg = c.red},
