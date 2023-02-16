@@ -428,6 +428,12 @@ local function set_groups()
     ['texMathDelim'] = {fg = c.fg, bg = c.none},
     ['texMathOper'] = {fg = c.fg, bg = c.none},
 
+    --------------------------------------------------------------------------------
+    --- lazy
+    --------------------------------------------------------------------------------
+
+    ['LazyNormal'] = {fg = c.fg, bg = c.bg2},
+
   }
 
   if vim.env.SSH_CONNECTION then
