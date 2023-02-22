@@ -355,13 +355,13 @@ local function set_groups()
     --- lsp
     --------------------------------------------------------------------------------
 
-    ['DiagnosticHint']      = {fg = c.light_pink, bg = c.bg2},
+    ['DiagnosticHint']      = {fg = c.light_pink},
     ['DiagnosticSignHint']  = {fg = c.light_pink},
-    ['DiagnosticError']     = {fg = c.red, bg = c.bg2},
+    ['DiagnosticError']     = {fg = c.red},
     ['DiagnosticSignError'] = {fg = c.red},
-    ['DiagnosticWarn']      = {fg = c.yellow, bg = c.bg2},
+    ['DiagnosticWarn']      = {fg = c.yellow},
     ['DiagnosticSignWarn']  = {fg = c.yellow},
-    ['DiagnosticInfo']      = {fg = c.orange, bg = c.bg2},
+    ['DiagnosticInfo']      = {fg = c.orange},
     ['DiagnosticSignInfo']  = {fg = c.orange},
 
     --------------------------------------------------------------------------------
